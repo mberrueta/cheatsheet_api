@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ApplicationService
   def call
     validate!
@@ -5,6 +7,5 @@ class ApplicationService
 
   protected
 
-  def validate!
-  end
+  def validate!; end
 end
