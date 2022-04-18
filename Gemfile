@@ -15,13 +15,14 @@ gem 'rake'
 
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'dotenv-rails'
+  gem 'rspec-rails'
 end
 
 group :development do
   # gem 'bullet' not db needed
   gem 'brakeman'
   gem 'bundler-audit'
-  gem 'dotenv'
   gem 'formatador'
   gem 'rails_best_practices'
   gem 'rubocop'
