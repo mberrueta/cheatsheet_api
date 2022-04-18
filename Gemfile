@@ -9,10 +9,10 @@ gem 'rails', '~> 7.0.2', '>= 7.0.2.3'
 gem 'pg'
 gem 'puma', '~> 5.0'
 gem 'rake'
+gem 'dotenv-rails'
 
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
-  gem 'dotenv-rails'
   gem 'rspec-rails'
 end
 
