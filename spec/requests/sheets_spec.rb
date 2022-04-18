@@ -1,7 +1,17 @@
 require 'rails_helper'
+require 'json'
 
-RSpec.describe "Sheets", type: :request do
+RSpec.describe SheetsController, type: :request do
+  before do
+    ENV['SHEETS_PATH'] = 'spec/test_sheets'
+  end
   describe "GET /index" do
-    pending "add some examples (or delete) #{__FILE__}"
+    it 'list available sheets' do
+      get sheets_path
+
+      expect(
+        JSON.parse(response.body).symbolize_keys
+      ).to eq( sheets: %w[mac vscode])
+    end
   end
 end
