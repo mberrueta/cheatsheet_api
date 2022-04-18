@@ -133,6 +133,7 @@ GEM
     parallel (1.22.1)
     parser (3.1.2.0)
       ast (~> 2.4.1)
+    pg (1.3.5)
     puma (5.6.4)
       nio4r (~> 2.0)
     racc (1.6.0)
@@ -224,7 +225,6 @@ GEM
     ruby-progressbar (1.11.0)
     sexp_processor (4.16.1)
     spring (4.0.0)
-    sqlite3 (1.4.2)
     strscan (3.0.1)
     thor (1.2.1)
     timecop (0.9.5)
@@ -249,6 +249,7 @@ DEPENDENCIES
   dotenv-rails
   faker
   formatador
+  pg
   puma (~> 5.0)
   rails (~> 7.0.2, >= 7.0.2.3)
   rails_best_practices
@@ -260,7 +261,6 @@ DEPENDENCIES
   rubocop-rails
   rubocop-rspec
   spring
-  sqlite3 (~> 1.4)
   timecop
 
 RUBY VERSION
