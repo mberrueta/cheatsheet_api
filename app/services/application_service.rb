@@ -7,5 +7,7 @@ class ApplicationService
 
   protected
 
-  def validate!; end
+  def validate!
+    raise 'missing environment variable for SHEETS_PATH' unless ENV['SHEETS_PATH']
+  end
 end

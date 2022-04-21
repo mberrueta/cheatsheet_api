@@ -1,45 +1,16 @@
- Mac usefull shortcuts
+description: Mac usefull shortcuts
 tags:
   - environment
   - productivity
   - ios
 shortcuts:
   - view:
-    - desktop: F11
-    - right_desk: ^ RIGHT
-    - left_desk: ^ LEFT
-    - app_window: ^ DOWN
-    - emojis: ^ COMMAND SPACE
-    - context_menu: SHIFT F10
-    - zoom: OPT COMMAND 8
-    - zoom_red: OPT COMMAND ;
-    - zoom_inc: OPT COMMAND '
-    - maximize: ^ OPT M
-    - restore: ^ OPT R
-    - full_screen/restore: COMMAND Enter
+      - desktop: F11
+      - right_desk: ^ RIGHT
   - finder:
-    - finder_search: OPT COMMAND SPACE
+      - finder_search: OPT COMMAND SPACE
   - quick_access:
-    - menu_bar: ^ F2
-    - dock: ^ F3
-    - next_win: ^ F4
-    - tool_bar: ^ F5
-    - floating_windows: ^ F6
-    - next_window: COMMAND `
-    - help_menu: COMMAND SHIFT /
-    - launchpad: ^ OPT COMMAND SPACE
-    - mission_control: ^ UP
-    - screen_shot: SHIFT COMMAND 4
-    - screen_shot_opt: SHIFT COMMAND 5
-    - windows_up:
-        command: ^ OPT UP
-        require: rectangle
-    - windows_down:
-        command: ^ OPT DOWN
-        require: rectangle
-    - windows_right:
-        command: ^ OPT RIGHT
-        require: rectangle
-    - windows_left:
-        command: ^ OPT LEFT
-        require: rectangle
+      - menu_bar: ^ F2
+      - windows_left:
+          command: ^ OPT LEFT
+          require: rectangle
