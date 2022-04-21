@@ -22,10 +22,12 @@ group :development do
   gem 'brakeman'
   gem 'bundler-audit'
   gem 'formatador'
+  gem 'pry'
   gem 'rails_best_practices'
   gem 'rubocop'
   gem 'rubocop-performance'
   gem 'rubocop-rails'
+  gem 'rubocop-rake'
   gem 'rubocop-rspec'
   gem 'spring'
 end

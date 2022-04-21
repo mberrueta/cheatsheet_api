@@ -1,18 +1,21 @@
-  Mac usefull shortcuts
-  tags:
-    - ide
-    - productivity
-  shortcuts:
-    - movement:
-        - next_change: ⌘ F5
-        - next/prev_editor: ⌥ ⌘ → / ←
-        - back/next: ^ - / ⇪ ^ -
-        - next_bookmark: ⌥ ⌘ l
-        - set_bookmark: ⌥ ⌘ k
-        - next/prev_problem: ⇪ F8
-        - symbol_in_workspace: ⌘ T
-    - view:
-      - symbol_in_editor: ⇪ ⌘ o
-      - show/hide_console: ⌘ j
-    - transform:
-      - fold/unfold: ⌘ ⌥ [ / ]
+description: Mac usefull shortcuts
+tags:
+  - ide
+  - productivity
+shortcuts:
+  - movement:
+      - next_change: CMD F5
+      - editor next: OPT CMD →
+      - editor prev: OPT CMD ←
+      - go back: ^ -
+      - go next: SHIFT ^ -
+      - next_bookmark: OPT CMD l
+      - set_bookmark: OPT CMD k
+      - next/prev_problem: SHIFT F8
+      - symbol_in_workspace: CMD T
+  - view:
+    - symbol_in_editor: SHIFT CMD o
+    - show/hide_console: CMD j
+  - transform:
+    - fold: CMD OPT [
+    - unfold: CMD OPT ]
