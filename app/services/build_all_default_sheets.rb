@@ -14,13 +14,11 @@ class BuildAllDefaultSheets < ApplicationService
   def build
     call_cheat_cmd do |result|
       result.drop(1).each do |line|
-        name, _, tags = line.split(' ')
-        # print "#{name}, #{tags.split(',')}"
-        puts name
+        name, _, tags = line.split
         begin
           BuildSheet.new(name, tags.split(',')).call
-        rescue => e
-          puts "failed to build #{name} #{e}"
+        rescue StandardError
+          StandardError
         end
       end
     end

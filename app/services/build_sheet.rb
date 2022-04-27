@@ -28,7 +28,7 @@ class BuildSheet < ApplicationService
   def hash
     @hash ||= {
       description: "Generated sheet for #{sheet}",
-      tags: tags,
+      tags:,
       shortcuts: {
         defaults: local_sheet
       }
