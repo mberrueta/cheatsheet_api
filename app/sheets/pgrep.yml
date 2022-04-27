@@ -1,0 +1,10 @@
+---
+:description: Generated sheet for pgrep
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To get a list of PIDs matching <pattern>:': "pgrep <pattern>\n\n"
+    'To kill all PIDs matching <pattern>:': 'pgrep -f <pattern> | xargs kill
+
+      '

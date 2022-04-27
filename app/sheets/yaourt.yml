@@ -1,0 +1,19 @@
+---
+:description: Generated sheet for yaourt
+:tags:
+- community
+- packaging
+:shortcuts:
+  :defaults:
+    'For instance, to install a package:': |
+      pacman -S <package>
+      yaourt -S <package>
+    and if appropriate, donwload the source and build the package requested.: "\n"
+    'Here are the commands yaourt provides while pacman doesn''t :': "\n"
+    'To search for <package> and install it:': "yaourt <package>\n\n"
+    svn, hg...): "yaourt -Suya --devel\n\n"
+    For all of the above commands, if you want yaourt to stop asking constantly for confirmations,: "use
+      the option --noconfirm\n\n"
+    'To build <package> from source:': 'yaourt -Sb <package>
+
+      '

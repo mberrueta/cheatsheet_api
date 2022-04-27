@@ -1,0 +1,16 @@
+---
+:description: Generated sheet for python
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    go to http://127.0.0.1:8000: "\n"
+    Python v2.7: 'python -m SimpleHTTPServer
+
+      '
+    Python 3: "python -m http.server 8000\n\n"
+    SMTP-Server for debugging, messages will be discarded, and printed on stdout.: "python
+      -m smtpd -n -c DebuggingServer localhost:1025\n\n"
+    Pretty print a json: 'python -m json.tool foo.json
+
+      '

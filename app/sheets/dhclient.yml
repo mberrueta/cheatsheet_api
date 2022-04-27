@@ -1,0 +1,13 @@
+---
+:description: Generated sheet for dhclient
+:tags:
+- community
+- networking
+:shortcuts:
+  :defaults:
+    'To release the current IP address:': "sudo dhclient -r\n\n"
+    'To obtain a new IP address:': "sudo dhclient\n\n"
+    Running the above in sequence is a common way of refreshing an IP.: "\n"
+    'To obtain a new IP address for a specific interface:': 'sudo dhclient <interface>
+
+      '

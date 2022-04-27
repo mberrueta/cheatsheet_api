@@ -1,0 +1,19 @@
+---
+:description: Generated sheet for gem
+:tags:
+- community
+- packaging
+- ruby
+:shortcuts:
+  :defaults:
+    'To search for a package:': "gem search <package>\n\n"
+    'To install a package:': "gem install <package>\n\n"
+    'To install a package in user space:': "gem install --user-install <package>\n\n"
+    'To install specific version of a package:': "gem install <package> -v <version>\n\n"
+    'To uninstall a package:': "gem uninstall <package>\n\n"
+    'To upgrade a package:': "gem update <package>\n\n"
+    'To show details of a package:': "gem info <package>\n\n"
+    'To list local packages:': "gem list --local\n\n"
+    'To show help on command:': 'gem help <command>
+
+      '

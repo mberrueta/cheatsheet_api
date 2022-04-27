@@ -1,0 +1,10 @@
+---
+:description: Generated sheet for export
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To show current shell attributes:': "export\n\n"
+    'To export an environment variable:': 'export VARNAME="value"
+
+      '

@@ -1,0 +1,12 @@
+---
+:description: Generated sheet for rm
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To remove all files and subdirs in <dir>:': "rm -rf <dir>\n\n"
+    'To ignore non-existent files:': "rm -f <dir>\n\n"
+    'To remove a file with this inode:': 'find /tmp/ -inum 6666 -exec rm -i ''{}''
+      \;
+
+      '

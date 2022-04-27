@@ -1,0 +1,24 @@
+---
+:description: Generated sheet for wget
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To download <url>:': 'wget <url>
+
+      '
+    'To download multiples files with multiple URLs:': "wget <url>...\n\n"
+    'To download <url> and change its name:': "wget <url> -O <outfile>\n\n"
+    'To download <url> into <dir>:': "wget -P <dir> <url>\n\n"
+    'To continue an aborted downloaded:': "wget -c <url>\n\n"
+    'To parse a file that contains a list of URLs to fetch each one:': "wget -i url_list.txt\n\n"
+    'To mirror a whole page locally:': "wget -pk <url>\n\n"
+    'To mirror a whole site locally:': "wget -mk <url>\n\n"
+    'To download files according to a pattern:': "wget http://example.com/files-{1..15}.tar.bz2\n\n"
+    'To download all the files in a directory with a specific extension if directory indexing is enabled:': "wget
+      -r -l1 -A.extension http://example.com/directory\n\n"
+    'To download only response headers (-S --spider) and display them on stdout (-O -).:': "wget
+      -S --spider -O - <url>\n\n"
+    'To change the User-Agent to ''User-Agent: toto'':': 'wget -U ''toto'' <url>
+
+      '

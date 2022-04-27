@@ -1,0 +1,15 @@
+---
+:description: Generated sheet for pactl
+:tags:
+- audio
+- community
+- pulseaudio
+:shortcuts:
+  :defaults:
+    INCREASE the volume of default sink by 2.5%: "pactl set-sink-volume @DEFAULT_SINK@
+      +2.5%\n\n"
+    DECREASE the volume of default sink by 2.5%: "pactl set-sink-volume @DEFAULT_SINK@
+      -2.5%\n\n"
+    Toggle mute the default sink: 'pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+      '

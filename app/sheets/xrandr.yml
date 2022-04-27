@@ -1,0 +1,14 @@
+---
+:description: Generated sheet for xrandr
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To enable HDMI2 output with maximal resolution:': "xrandr --output HDMI2 --auto\n\n"
+    'To enable HDMI2 output with specific resolution:': "xrandr --output HDMI2 --mode
+      1280x800\n\n"
+    'To enable HDMI2 output next to HDMI1 output:': "xrandr --output HDMI2 --auto
+      --right-of HDMI1\n\n"
+    'To disable HDMI2 output:': 'xrandr --output HDMI2 --off
+
+      '

@@ -1,0 +1,13 @@
+---
+:description: Generated sheet for cp
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To copy a file:': "cp ~/Desktop/foo.txt ~/Downloads/foo.txt\n\n"
+    'To copy a directory:': "cp -r ~/Desktop/cruise_pics/ ~/Pictures/\n\n"
+    'To create a copy but ask to overwrite if the destination file already exists:': "cp
+      -i ~/Desktop/foo.txt ~/Documents/foo.txt\n\n"
+    'To create a backup file with date:': 'cp foo.txt{,."$(date +%Y%m%d-%H%M%S)"}
+
+      '

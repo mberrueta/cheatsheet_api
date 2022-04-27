@@ -1,0 +1,12 @@
+---
+:description: Generated sheet for mkdir
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To create nested directories:': "mkdir -p foo/bar/baz\n\n"
+    'To create foo/bar and foo/baz directories:': "mkdir -p foo/{bar,baz}\n\n"
+    'To create the foo/bar, foo/baz, foo/baz/zip and foo/baz/zap directories:': 'mkdir
+      -p foo/{bar,baz/{zip,zap}}
+
+      '

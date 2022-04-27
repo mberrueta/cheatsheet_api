@@ -1,0 +1,19 @@
+---
+:description: Generated sheet for kubectl
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To display list of all available commands:': "kubectl -h\n\n"
+    'To display an explanation of a specific command:': "kubectl command_name -h\n\n"
+    'To display complete list of supported resources:': "kubectl api-resources\n\n"
+    'To display an explanation of a specific resource:': "kubectl explain resource_name\n\n"
+    'To display an explanation of a specific field of resource:': "kubectl explain
+      resource_name.field_name\n\n"
+    'To display list of global command-line options:': "kubectl options\n\n"
+    'To set up `kubectl` autocomplete in bash (press Tab to use):': "source <(kubectl
+      completion bash)\n\n"
+    'To display all resources in all namespaces:': "kubectl get all -A\n\n"
+    'To order events by `creationTimestamp`:': 'kubectl get events --sort-by=''.metadata.creationTimestamp''
+
+      '

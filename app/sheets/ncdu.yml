@@ -1,0 +1,12 @@
+---
+:description: Generated sheet for ncdu
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To save results to <file>:': "ncdu -o <file>\n\n"
+    'To read from <file>:': "ncdu -f <file>\n\n"
+    'To save results to a compressed file:': "ncdu -o- | gzip > <file>\n\n"
+    'To read from a compressed file:': 'zcat <file> | ncdu -f-
+
+      '

@@ -1,0 +1,9 @@
+---
+:description: Generated sheet for pwd
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'Show the absolute path of your current working directory:': 'pwd
+
+      '

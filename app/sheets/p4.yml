@@ -1,0 +1,11 @@
+---
+:description: Generated sheet for p4
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    wtf: "tags: [ vcs ]\n\n"
+    'To print details related to client and server configuration:': "p4 info \n\n"
+    'To open a file and add it to depot:': 'p4 add <filename>
+
+      '

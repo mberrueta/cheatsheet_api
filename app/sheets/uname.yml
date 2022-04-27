@@ -1,0 +1,33 @@
+---
+:description: Generated sheet for uname
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To print all system information:': 'uname -a
+
+      '
+    Linux system-hostname 3.2.0-4-amd64 1 SMP Debian 3.2.32-1 x86_64 GNU/Linux: "\n"
+    'To print the hostname:': 'uname -n
+
+      '
+    system-hostname: "\n"
+    'To print the kernel release:': 'uname -r
+
+      '
+    3.2.0-4-amd64: "\n"
+    'To print the kernel version, with more specific information:': 'uname -v
+
+      '
+    1 SMP Debian 3.2.32-1: "\n"
+    'To print the hardware instruction set:': 'uname -m
+
+      '
+    x86_64: "\n"
+    'To print the kernel name:': 'uname -s
+
+      '
+    Linux: "\n"
+    'To print the operating system:': 'uname -o
+
+      '

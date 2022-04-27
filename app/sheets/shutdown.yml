@@ -1,0 +1,12 @@
+---
+:description: Generated sheet for shutdown
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To reboot the system immediately:': "shutdown -r now\n\n"
+    'To shut system down immediately:': "shutdown -h now\n\n"
+    'To reboot system after 5 minutes:': "shutdown -r +5\n\n"
+    'To cancel a scheduled shutdown:': 'shutdown -c
+
+      '

@@ -1,0 +1,29 @@
+---
+:description: Generated sheet for crontab
+:tags:
+- community
+- job
+- periodic
+- scheduler
+:shortcuts:
+  :defaults:
+    set a shell: "SHELL=/bin/bash\n\n"
+    set a PATH: "PATH=/usr/bin:/usr/sbin:/usr/local/bin\n\n"
+    incorrect way of seeting PATH: "PATH=$PATH:/do/not/do/this\n\n"
+    crontab format: |+
+      * * * * *  command_to_execute
+      - - - - -
+      | | | | |
+      | | | | +- day of week (0 - 7) (where sunday is 0 and 7)
+      | | | +--- month (1 - 12)
+      | | +----- day (1 - 31)
+      | +------- hour (0 - 23)
+      +--------- minute (0 - 59)
+
+    every 15 min: "*/15 * * * * /home/user/command.sh\n\n"
+    every midnight: "0 0 * * * /home/user/command.sh\n\n"
+    every Saturday at 8:05 AM: "5 8 * * 6 /home/user/command.sh\n\n"
+    compute your crontab periodicity format online: "https://crontab.guru/\n\n"
+    be careful with % sign (percent), it has special meaning, see https://crontab.guru/ for explanation: "%
+      signs must be escaped such as \\%\n"
+...

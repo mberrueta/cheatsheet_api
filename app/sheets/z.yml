@@ -1,0 +1,13 @@
+---
+:description: Generated sheet for z
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To `cd` to most frecent dir matching `foo`:': "z foo\n\n"
+    'To `cd` to most frecent dir matching `foo`, then `bar`:': "z foo bar\n\n"
+    'To `cd` to highest ranked dir matching `foo`:': "z -r foo\n\n"
+    'To `cd` to most recently accessed dir matching `foo`:': "z -t foo\n\n"
+    'To list all dirs matching `foo` - by frecency:': 'z -l foo
+
+      '

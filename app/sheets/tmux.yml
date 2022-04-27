@@ -1,0 +1,34 @@
+---
+:description: Generated sheet for tmux
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To start tmux:': "tmux\n\n"
+    'To detach from tmux:': "Ctrl-b d\n\n"
+    'To restore tmux session:': "tmux attach\n\n"
+    'To detach an already attached session (great if you are moving devices with different screen resolutions):': "tmux
+      attach -d \n\n"
+    'To display session:': "tmux ls\n\n"
+    'To rename session:': "Ctrl-b $\n\n"
+    'To switch session:': "Ctrl-b s\n\n"
+    'To start a shared session:': |+
+      tmux -S /tmp/your_shared_session
+      chmod 777 /tmp/your_shared_session
+
+    'To help screen (Q to quit):': "Ctrl-b ?\n\n"
+    'To scroll in window:': "Ctrl-b PageUp/PageDown\n\n"
+    To reload configuration file: "Ctrl-b : source-file /path/to/file\n\n"
+    'To create a window:': "Ctrl-b c\n\n"
+    'To go next window:': "Ctrl-b n\n\n"
+    'To destroy a window:': "Ctrl-b x\n\n"
+    'To switch between windows:': |+
+      Ctrl-b [0-9]
+      Ctrl-b Arrows
+
+    'To split windows horizontally:': "Ctrl-b %\n\n"
+    'To split windows vertically:': "Ctrl-b \"\n\n"
+    'To swap windows:': 'Ctrl-b :swap-window -s [0-9] -t [0-9]
+
+      '
+...

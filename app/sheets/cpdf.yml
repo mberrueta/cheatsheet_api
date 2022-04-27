@@ -1,0 +1,67 @@
+---
+:description: Generated sheet for cpdf
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    out.pdf: |+
+      cpdf in.pdf 1-3,6 -o out.pdf
+
+      cpdf -scale-to-fit usletterportrait in.pdf -o out.pdf
+
+    to out.pdf: "cpdf in.pdf even -o out.pdf\n\n"
+    files together and adding a copyright stamp to every page.: "cpdf -merge in.pdf
+      in2.pdf AND -add-text \"Copyright 2014\" -o out.pdf\n\n"
+    for cpdf.: "cpdf -control control.txt\n\n"
+    Merge in.pdf and in2.pdf into one document, writing to out.pdf.: "cpdf -merge
+      in.pdf in2.pdf -o out.pdf\n\n"
+    Chunk002.pdf etc: "cpdf -split in.pdf -o Chunk%%%.pdf -chunk 10\n\n"
+    name is the bookmark label: "cpdf -split-bookmarks 0 in.pdf -o @N.pdf\n\n"
+    in x and y directions.: "cpdf -scale-page \"2 2\" in.pdf -o out.pdf\n\n"
+    millimetres in the y direction, writing to out.pdf: "cpdf -shift \"26pt 18mm\"
+      in.pdf -o out.pdf\n\n"
+    write to out.pdf.: "cpdf -rotate-contents 90 in.pdf -o out.pdf\n\n"
+    Crop the pages in in.pdf to a 600 pts by 400 pts rectangle.: "cpdf -crop \"0 0
+      600pt 400pt\" in.pdf -o out.pdf\n\n"
+    and the user password 'joe': "cpdf -encrypt 128bit fred joe in.pdf -o out.pdf\n\n"
+    Decrypt using the owner password, writing to out.pdf.: "cpdf -decrypt in.pdf owner=fred
+      -o out.pdf\n\n"
+    Compress the data streams in in.pdf, writing the result to out.pdf.: "cpdf -compress
+      in.pdf -o out.pdf\n\n"
+    Decompress the data streams in in.pdf, writing to out.pdf.: "cpdf -decompress
+      in.pdf -o out.pdf\n\n"
+    'List the bookmarks in in.pdf. This would produce:': "cpdf -list-bookmarks in.pdf\n\n"
+    'Outputs:': "\n"
+    in.pdf, writing to out.pdf.: "cpdf -add-bookmarks bookmarks.txt in.pdf -o out.pdf\n\n"
+    has no transition effect.: "cpdf -presentation in.pdf 2-end -trans Split -duration
+      10 -o out.pdf\n\n"
+    result to out.pdf.: "cpdf -stamp-on watermark.pdf in.pdf -o out.pdf\n\n"
+    Courier font, writing to out.pdf: "cpdf -topleft 10 -font Courier -add-text \"Page
+      %Page\\nDate %d-%m-%Y\" in.pdf -o out.pdf\n\n"
+    Two up impose the file in.pdf, writing to out.pdf: "cpdf -twoup-stack in.pdf -o
+      out.pdf\n\n"
+    Add extra blank pages after pages one, three and four of a document.: "cpdf -pad-after
+      1,3,4 in.pdf -o out.pdf\n\n"
+    List the annotations in a file in.pdf to standard output.: "cpdf -list-annotations
+      in.pdf\n\n"
+    'Might Produce:': "\n"
+    "--": "\n"
+    Copy the annotations from from.pdf to in.pdf, writing to out.pdf.: "cpdf -copy-annotations
+      from.pdf in.pdf -o out.pdf\n\n"
+    Set the document title of in.pdf. writing to out.pdf.: "cpdf -set-title \"The
+      New Title\" in.pdf -o out.pdf\n\n"
+    hidden, writing to out.pdf.: "cpdf -hide-toolbar true in.pdf -o out.pdf\n\n"
+    metadata.xml, and write the output to out.pdf.: "cpdf -set-metadata metadata.xml
+      in.pdf -o out.pdf\n\n"
+    out.pdf.: |
+      cpdf -set-page-layout TwoColumnRight in.pdf -o out.pdf
+
+      cpdf -thinlines 2pt in.pdf -o out.pdf
+    mode, putting the result in out.pdf.: "cpdf -set-page-mode FullScreen in.pdf -o
+      out.pdf\n\n"
+    Attach the file sheet.xls to in.pdf, writing to out.pdf.: "cpdf -attach-file sheet.xls
+      in.pdf -o out.pdf\n\n"
+    Remove any attachments from in.pdf, writing to out.pdf.: "cpdf -remove-files in.pdf
+      -o out.pdf\n\n"
+    Blacken all the text in in.pdf, writing to out.pdf.: "cpdf -blacktext in.pdf -o
+      out.pdf\n\n"

@@ -1,0 +1,49 @@
+---
+:description: Generated sheet for snap
+:tags:
+- community
+- packaging
+:shortcuts:
+  :defaults:
+    'To find <package>:': "snap find <package>\n\n"
+    'To view detailed information about <package>:': "snap info <package>\n\n"
+    'To view all private snaps (must be logged in):': "snap find --private\n\n"
+    'To install the <package>:': "sudo snap install <package>\n\n"
+    'To install the <package> from the "beta" channel:': "sudo snap install <package>
+      --channel=beta\n\n"
+    'To view installed snaps:': "snap list\n\n"
+    'To list all revisions of installed snaps:': "snap list --all\n\n"
+    'To (manually) update all snaps:': "sudo snap refresh\n\n"
+    'To (manually) update <package>:': "sudo snap refresh <package>\n\n"
+    'To update <package> to the "beta" channel:': "sudo snap refresh <package> --channel=beta\n\n"
+    'To revert <package> to a prior version:': "sudo snap revert <package>\n\n"
+    'To revert <package> to revision 5:': "snap revert <package> --revision 5\n\n"
+    'To remove <package>:': "sudo snap remove <package>\n\n"
+    'To log in to snap (must first create account online):': "sudo snap login\n\n"
+    'To log out of snap:': "snap logout\n\n"
+    'To view a transaction log summary:': "snap changes\n\n"
+    'To view details of item 123 in the transaction log:': "snap change 123\n\n"
+    'To watch transaction 123:': "snap watch 123\n\n"
+    'To abort transaction 123:': "snap abort 123\n\n"
+    'To download <package> (and its assertions) *without* installing it:': "snap download
+      <package>\n\n"
+    'To install the locally-downloaded `foo` snap with assertions:': |+
+      snap ack foo.assert
+      snap install foo.snap
+
+    developing.: "snap install --dangerous foo.snap\n\n"
+    'NB: this is dangerous, and bypasses the snap sandboxing mechanisms': "snap install
+      --devmode foo\n\n"
+    'NB: this is likewise dangerous': "snap install --classic foo\n\n"
+    'To view available snap interfaces:': "snap interfaces\n\n"
+    'To connect the `foo:camera` plug to the ubuntu core slot:': "snap connect foo:camera
+      :camera\n\n"
+    'To disconnect the `foo:camera` plug from the ubuntu core slot:': "snap disconnect
+      foo:camera\n\n"
+    To disable the `foo` snap: "snap disable foo\n\n"
+    To enable the `foo` snap: "snap enable foo\n\n"
+    'To set snap `foo`''s `bar` property to 10:': "snap set foo bar=10\n\n"
+    'To read snap `foo`''s current `bar` property:': 'snap get foo bar
+
+      '
+...

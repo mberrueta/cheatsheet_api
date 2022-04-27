@@ -1,0 +1,9 @@
+---
+:description: Generated sheet for truncate
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To clear the contents from <file>:': "truncate -s 0 <file>\n\n"
+    'To truncate <file> to 100 bytes:': "truncate -s 100 <file>\n\n"
+    'To truncate <file> to 100 KB:': "truncate -s 100K <file>\n\n"

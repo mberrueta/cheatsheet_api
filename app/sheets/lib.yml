@@ -1,0 +1,16 @@
+---
+:description: Generated sheet for lib
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To display available libraries:': "ldconfig -p\n\n"
+    'To update library resources:': "ldconfig\n\n"
+    'To display libraries and file location:': "ldd\n\n"
+    'To libraries available to apps in real-time:': "\"Dynamic Libraries\" (.so.)\n\n"
+    'To libraries only available to apps when installed (imported):': "\"Static Libraries\"
+      (.a.)\n\n"
+    'To standard (usual) library file location:': "/lib\n\n"
+    'To sofware-accessible source for library info :': "/etc/ld.so.cache \t# (binary)\n\n"
+    'To human-readable source for library info:': "/etc/ld.so.conf \t# (points to
+      /etc/ld.so.conf.d)\n"

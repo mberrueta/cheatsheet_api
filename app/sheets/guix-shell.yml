@@ -1,0 +1,13 @@
+---
+:description: Generated sheet for guix-shell
+:tags:
+- community
+- environment
+:shortcuts:
+  :defaults:
+    Download/Build the desired packages in the store and make their executables available in the current interactive shell: "guix
+      shell <package-name> <package-name> ...\n\n"
+    Download/Build the desired packages in the store and invoke a `command` in the environment with package executables: 'guix
+      shell <package-name> -- <command>
+
+      '

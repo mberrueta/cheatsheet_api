@@ -1,0 +1,23 @@
+---
+:description: Generated sheet for salt
+:tags:
+- community
+- salt
+- saltstack
+:shortcuts:
+  :defaults:
+    'Show pending keys to be accepted:': "salt-key -L\n\n"
+    'Accept all pending keys:': "salt-key -A\n\n"
+    'Accept pending key by name:': "salt-key -a <target>\n\n"
+    'Remove key by name:': "salt-key -D <target>\n\n"
+    'Test minion connection:': "salt <target> test.ping\n\n"
+    Show active salt jobs: "salt-run jobs.active\n\n"
+    Kill active job: "salt <target> saltutil.kill_job <job_id>\n\n"
+    Copy small file (< 100kb) from master to minion: "salt-cp <target> <source> <dest>\n\n"
+    Copy large file from master (/srv/salt/<source>) directory to minion: "salt <target>
+      cp.get_file salt://<source> <destination>\n\n"
+    Copy file from minion to master (will be stored at /var/cache/salt/master/minions/<minion_name>/files: "salt
+      <target> cp.push <source>\n\n"
+    Deploy state: 'salt <target> state.apply <state_name>
+
+      '

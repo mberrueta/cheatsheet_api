@@ -1,0 +1,14 @@
+---
+:description: Generated sheet for urpm
+:tags:
+- community
+- packaging
+:shortcuts:
+  :defaults:
+    'To search (fuzzy) <package>:': "urpmq -Y <package>\n\n"
+    'To check if <package> is installed:': "rpm -q <package>\n\n"
+    'To install <package>:': "urpmi <package>\n\n"
+    'To download <package> without installing it:': "urpmi --no-install <package>\n\n"
+    'To uninstall <package>:': 'urpme <package>
+
+      '

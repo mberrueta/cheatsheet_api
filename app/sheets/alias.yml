@@ -1,0 +1,10 @@
+---
+:description: Generated sheet for alias
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To show a list of your current shell aliases:': "alias\n\n"
+    'To alias `ls -l` to `ll`:': 'alias ll=''ls -l''
+
+      '

@@ -1,0 +1,33 @@
+---
+:description: Generated sheet for mdadm
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    "${P} partition identifier (/dev/sd${D}${P})": "\n"
+    'To create (initialize) a new array:': "mdadm --create /dev/md${M} --level=raid5
+      --raid-devices=4 /dev/sd{a,b,c,d,e}${P} --spare-devices=/dev/sdf1\n\n"
+    'To manually assemble (activate) an existing array:': "mdadm --assemble /dev/md${M}
+      /dev/sd{a,b,c,d,e}${P}\n\n"
+    'To automatically assemble (activate) all existing arrays:': "mdadm --assemble
+      --scan\n\n"
+    'To stop an assembled (active) array:': "mdadm --stop /dev/md${M}\n\n"
+    'To see array configuration:': "mdadm --query /dev/md${M}\n\n"
+    'To see array component configuration (dump superblock content):': "mdadm --query
+      --examine /dev/sd${D}${P}\n\n"
+    'To see detailed array confiration/status:': "mdadm --detail /dev/md${M}\n\n"
+    "(MAY be required by initrd for successfull boot)": "mdadm --detail --scan > /etc/mdadm/mdadm.conf\n\n"
+    "(MUST do before reusing a partition for other purposes)": "mdadm --zero-superblock
+      /dev/sd${D}${P}\n\n"
+    "(SHOULD when a device shows wear-and-tear signs, e.g. through SMART)": "mdadm
+      --manage /dev/md${M} --fail /dev/sd${D}${P}\n\n"
+    "(SHOULD before preemptively replacing a device, after failing it)": "mdadm --manage
+      /dev/md${M} --remove /dev/sd${D}${P}\n\n"
+    'To prepare (format) a new device to replace a failed one:': "sfdisk -d /dev/sd${D,sane}
+      | sfdisk /dev/sd${D,new}\n\n"
+    "(this will trigger the rebuild)": "mdadm --manage /dev/md${M} --add /dev/sd${D,new}${P}\n\n"
+    'To see assembled (active) arrays status:': "cat /proc/mdstat\n\n"
+    (SHOULD after hostname change; eg. name="$(hostname -s)"): 'mdadm --assemble /dev/md${M}
+      /dev/sd{a,b,c,d,e}${P} --name="${name}:${M}" --update=name
+
+      '

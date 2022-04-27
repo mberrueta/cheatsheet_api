@@ -1,0 +1,14 @@
+---
+:description: Generated sheet for ssh-copy-id
+:tags:
+- community
+- ssh
+:shortcuts:
+  :defaults:
+    'To copy your keys listed in `ssh-add -L` to a remote host:': "ssh-copy-id <user>@<host>\n\n"
+    'To copy the keys to a remote host on a non-standard port:': "ssh-copy-id <user>@<host>
+      -p 2222\n\n"
+    'To copy one single public key to a remote host on a non-standard port:': 'ssh-copy-id
+      -i ~/.ssh/a_public_key.pub "username@host -p 2222"
+
+      '

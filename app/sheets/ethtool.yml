@@ -1,0 +1,15 @@
+---
+:description: Generated sheet for ethtool
+:tags:
+- community
+- networking
+:shortcuts:
+  :defaults:
+    'To show statistics for the selected interface:': "ethtool -S <interface>\n\n"
+    'To show interface permanent address:': "ethotool -P <interface>\n\n"
+    'To set interface speed:': "ethtool -s <interface> [ speed %d ]\n\n"
+    'To set interface autonegotiation:': "ethtool -s <interface> [ autoneg on|off
+      ]\n\n"
+    'To get interface errors:': 'ethtool -S <interface> | grep error
+
+      '

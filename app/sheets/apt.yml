@@ -1,0 +1,20 @@
+---
+:description: Generated sheet for apt
+:tags:
+- community
+- packaging
+:shortcuts:
+  :defaults:
+    'To find packages matching <phrase>:': "apt search <phrase>\n\n"
+    'To show information on a package:': "apt show <package>\n\n"
+    'To fetch package list:': "apt update\n\n"
+    'To download and install the updates and (UNLIKE apt-get) install new necessary packages:': "apt
+      upgrade\n\n"
+    AND remove packages that stand in the way of the upgrade - use with caution!: "apt
+      dist-upgrade\n\n"
+    'To perform a full system upgrade:': "apt update && apt upgrade # use dist-upgrade
+      carefully if needed\n\n"
+    'To install package(s):': "apt install <package>...\n\n"
+    'To uninstall package(s):': 'apt remove <package>...
+
+      '

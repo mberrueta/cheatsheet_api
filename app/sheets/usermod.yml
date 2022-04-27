@@ -1,0 +1,9 @@
+---
+:description: Generated sheet for usermod
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    Add user to sudo group: 'sudo usermod -aG sudo <username>
+
+      '

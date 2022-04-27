@@ -1,0 +1,12 @@
+---
+:description: Generated sheet for cd
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    Go to the given directory: "cd path/to/directory\n\n"
+    Go to home directory of current user: "cd\n\n"
+    Go up to the parent of the current directory: "cd ..\n\n"
+    Go to the previously chosen directory: 'cd -
+
+      '

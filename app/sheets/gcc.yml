@@ -1,0 +1,16 @@
+---
+:description: Generated sheet for gcc
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To compile a file:': "gcc file.c\n\n"
+    'To compile a file with a custom output:': "gcc -o file file.c\n\n"
+    'debug symbols:': "gcc -g\n\n"
+    'debug with all symbols:': "gcc -ggdb3\n\n"
+    'To build for 64 bits:': "gcc -m64\n\n"
+    With this option, no warning / error will be reported for the files in {/usr/include/myPersonnal/lib/}: "gcc
+      -isystem /usr/include/myPersonnal/lib/\n\n"
+    'To build a GUI for windows (Mingw) (Will disable the term/console):': 'gcc -mwindows
+
+      '

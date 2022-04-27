@@ -1,0 +1,17 @@
+---
+:description: Generated sheet for strace
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To strace a command:': "strace <command>\n\n"
+    'To save the trace to a file:': "strace -o <outfile> <command>\n\n"
+    'To follow only the open() system call:': "strace -e trace=open <command>\n\n"
+    'To follow all the system calls which open a file:': "strace -e trace=file <command>\n\n"
+    'To follow all the system calls associated with process management:': "strace
+      -e trace=process <command>\n\n"
+    'To follow child processes as they are created:': "strace -f <command>\n\n"
+    'To count time, calls and errors for each system call:': "strace -c <command>\n\n"
+    'To trace a running process (multiple PIDs can be specified):': 'strace -p <pid>
+
+      '

@@ -1,0 +1,13 @@
+---
+:description: Generated sheet for minikube
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To start with virtualbox driver:': "minikube start --vm-driver=virtualbox\n\n"
+    'To configure docker environment variables:': "minikube docker-env\n\n"
+    'To start view the dashboard in a browser:': "minikube dashboard\n\n"
+    'To list all services:': "minikube service list\n\n"
+    'To start a service in a browser:': 'minikube service <service>
+
+      '

@@ -1,0 +1,28 @@
+---
+:description: Generated sheet for ncat
+:tags:
+- community
+- networking
+:shortcuts:
+  :defaults:
+    Connect mode (ncat is client) | default port is 31337: "ncat <host> [<port>]\n\n"
+    Listen mode (ncat is server) | default port is 31337: "ncat -l [<host>] [<port>]\n\n"
+    Transfer file (closes after one transfer): "ncat -l [<host>] [<port>] < file\n\n"
+    Transfer file (stays open for multiple transfers): "ncat -l --keep-open [<host>]
+      [<port>] < file\n\n"
+    Receive file: "ncat [<host>] [<port>] > file\n\n"
+    Brokering | allows for multiple clients to connect: "ncat -l --broker [<host>]
+      [<port>]\n\n"
+    Listen with SSL | many options, use ncat --help for full list: "ncat -l --ssl
+      [<host>] [<port>]\n\n"
+    Access control: |+
+      ncat -l --allow <ip>
+      ncat -l --deny <ip>
+
+    Proxying: "ncat --proxy <proxyhost>[:<proxyport>] --proxy-type {http | socks4}
+      <host>[<port>]\n\n"
+    Chat server | can use brokering for multi-user chat: 'ncat -l --chat [<host>]
+      [<port>]
+
+      '
+...

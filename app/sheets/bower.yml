@@ -1,0 +1,19 @@
+---
+:description: Generated sheet for bower
+:tags:
+- community
+- packaging
+:shortcuts:
+  :defaults:
+    'To install a package:': "bower install <package>\n\n"
+    'To install a package from github:': "bower install <user>/<repo>\n\n"
+    'To install a specific package locally:': "bower install <package>#<version>\n\n"
+    'To install a package locally and save installed package into bower.json:': "bower
+      install <package> --save\n\n"
+    'To retrieve info of a particular package:': "bower info <package>\n\n"
+    'To list local packages:': "bower list\n\n"
+    'To search for a package by name:': "bower search <package>\n\n"
+    'To update a package to their newest version:': "bower update <package>\n\n"
+    'To remove a local package:': 'bower uninstall <package>
+
+      '

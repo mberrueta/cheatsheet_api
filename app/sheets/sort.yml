@@ -1,0 +1,12 @@
+---
+:description: Generated sheet for sort
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To sort a file:': "sort <file>\n\n"
+    'To sort a file by keeping only unique:': "sort -u <file>\n\n"
+    'To sort a file and reverse the result:': "sort -r <file>\n\n"
+    'To sort a file randomly:': 'sort -R <file>
+
+      '

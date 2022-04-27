@@ -1,0 +1,16 @@
+---
+:description: Generated sheet for asciiart
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To show some text in ASCII Art:': |2
+
+      figlet Cheat
+    '': "\n\n"
+    Show with a border: 'toilet -F border Cheat
+
+      '
+    Basic show (filled): 'toilet Cheat
+
+      '

@@ -1,0 +1,12 @@
+---
+:description: Generated sheet for screen
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To start a new named screen session:': "screen -S <session-name>\n\n"
+    'To detach from the current session:': "Press Ctrl+A then press d\n\n"
+    'To re-attach a detached session:': "screen -r <session-name>\n\n"
+    'To list all screen sessions:': 'screen -ls
+
+      '

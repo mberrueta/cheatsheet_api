@@ -1,0 +1,10 @@
+---
+:description: Generated sheet for ulimit
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    Report all current limits: "ulimit -a\n\n"
+    Unlimited file descriptors: 'ulimit -n unlimited
+
+      '

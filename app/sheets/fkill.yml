@@ -1,0 +1,12 @@
+---
+:description: Generated sheet for fkill
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    To kill a process by pid: "fkill 1337\n\n"
+    To kill processes by name (case insensitive): "fkill safari\n\n"
+    To kill a process listening on a port: "fkill :8080\n\n"
+    To run the interactive interface: 'fkill
+
+      '

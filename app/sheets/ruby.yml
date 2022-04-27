@@ -1,0 +1,14 @@
+---
+:description: Generated sheet for ruby
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'Help and documentation: https://ruby-doc.org/': "\n"
+    'To serve the current directory:': "ruby -run -e httpd . -p <port>\n\n"
+    'To execute a script file:': "ruby <file>\n\n"
+    'To execute one line of script:': "ruby -e 'command'\n\n"
+    'To check script file syntax:': "ruby -c <file>\n\n"
+    'To specify $LOAD_PATH directory:': |
+      ruby -Idirectory
+      ruby -Ispec spec/test_spec.rb

@@ -1,0 +1,25 @@
+---
+:description: Generated sheet for acl
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    Get ACL: "getfacl <file>\n\n"
+    Add or modify ACL on file: |+
+      setfacl -m u:username:rX <file>
+      setfacl -m g:groupname:rw <file>
+      setfacl -m o::- <file>
+
+    or provide all permissions at once: "setfacl -m u::rwx,g:groupname:rX,o::- <file>\n\n"
+    Copy ACL from file-A to file-B: "getfacl file-A | setfacl -M - file-B\n\n"
+    Apply ACL recursivelly to directory: "setfacl -R -m u:username:rX <directory>\n\n"
+    Delete ACL: "setfacl -x u:username,g:groupname <file>\n\n"
+    Delete all ACL on file, including default: "setfacl -b <file>\n\n"
+    Same operations works for default ACLs: |+
+      setfacl -m d:u:username:rx <directory>
+      setfacl -x d:u:username <directory>
+
+    Delete only default ACLs: 'setfacl -k <directory>
+
+      '
+...

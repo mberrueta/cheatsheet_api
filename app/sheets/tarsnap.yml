@@ -1,0 +1,19 @@
+---
+:description: Generated sheet for tarsnap
+:tags:
+- community
+- compression
+:shortcuts:
+  :defaults:
+    Perform a backup of two directories: "tarsnap -c -f <archive-name> /usr/home /other/stuff/to/backup\n\n"
+    Print how much data would be uploaded: "tarsnap -c -f <archive-name> --dry-run
+      --print-stats <directories...>\n\n"
+    Copy an archive (only accesses metadata): "tarsnap -c -f <target-archive-name>
+      @@<source-archive>\n\n"
+    List the archives: "tarsnap --list-archives\n\n"
+    Delete an archive: "tarsnap -d -f <archive-name>\n\n"
+    List the files in an archive: "tarsnap -tv -f <archive-name>\n\n"
+    Restore two users' home directories from an archive (use no leading slashes): 'tarsnap
+      -x -f <archive-name> usr/home/alice usr/home/bob
+
+      '

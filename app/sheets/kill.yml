@@ -1,0 +1,10 @@
+---
+:description: Generated sheet for kill
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To kill a process gracefully:': "kill -15 <pid>\n\n"
+    'To kill a process forcefully:': 'kill -9 <pid>
+
+      '

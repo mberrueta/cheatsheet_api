@@ -1,0 +1,21 @@
+---
+:description: Generated sheet for apt-get
+:tags:
+- community
+- packaging
+:shortcuts:
+  :defaults:
+    'To fetch package list:': "apt-get update\n\n"
+    'To download and install package updates:': "apt-get upgrade\n\n"
+    'AND remove any packages that stand in the way of the upgrade:': "apt-get dist-upgrade\n\n"
+    'Full command:': "apt-get update && apt-get dist-upgrade\n\n"
+    'To install a new package(s):': "apt-get install <package>...\n\n"
+    To download a package without installing it. (The package will be downloaded in your current working dir): "apt-get
+      download <package>\n\n"
+    'To change cache dir and archive dir (where .deb are stored):': "apt-get -o Dir::Cache=\"/path/to/destination/dir/\"
+      -o Dir::Cache::archives=\"./\" install ...\n\n"
+    'To show apt-get installed packages:': "grep 'install ' /var/log/dpkg.log\n\n"
+    'To silently keep old configuration during batch updates:': 'apt-get update -o
+      DPkg::Options::=''--force-confold'' ...
+
+      '

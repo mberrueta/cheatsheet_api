@@ -1,0 +1,10 @@
+---
+:description: Generated sheet for cut
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To cut out the third field of text or stdoutput that is delimited by a :': 'cut
+      -d# -f3
+
+      '

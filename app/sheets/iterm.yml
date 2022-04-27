@@ -1,0 +1,26 @@
+---
+:description: Generated sheet for iterm
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    GoTo panel: |2
+       ^ OPTION ARROW
+
+       # GoTo prev/next panel
+       ^ [/]
+
+       # GoTo tab
+       ^ ARROW
+
+       # Resize panel
+       ^ CTRL ARROW
+
+       # Set Mark
+       ^ M
+
+       # Jump to Mark
+       ^ J
+
+       # Copy Mode
+      ⇧ ⌘ C

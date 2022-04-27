@@ -1,0 +1,11 @@
+---
+:description: Generated sheet for shred
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To shred a file (5 passes) and verbose output:': "shred -n 5 -v <file>\n\n"
+    'To shred a file (5 passes) and a final overwrite of zeroes:': "shred -n 5 -vz
+      <file>\n\n"
+    'To do the above, and then truncate and rm the file:': "shred -n 5 -vzu <file>\n\n"
+    'To shred a partition:': "shred -n 5 -vz /dev/sda\n\n"

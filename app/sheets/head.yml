@@ -1,0 +1,11 @@
+---
+:description: Generated sheet for head
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To show the first 10 lines of <file>:': "head <file>\n\n"
+    'To show the first <number> lines of <file>:': "head -n <number> <file>\n\n"
+    'To show the first <number> bytes of <file>:': 'head -c <number> <file>
+
+      '

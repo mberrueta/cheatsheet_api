@@ -1,0 +1,27 @@
+---
+:description: Generated sheet for docker
+:tags:
+- community
+:shortcuts:
+  :defaults:
+    'To start the docker daemon:': "docker -d\n\n"
+    'To start a container with an interactive shell:': "docker run -ti <image-name>
+      /bin/bash\n\n"
+    'To "shell" into a running container (docker-1.3+):': "docker exec -ti <container-name>
+      bash\n\n"
+    'To inspect a running container:': "docker inspect <container-name> (or <container-id>)\n\n"
+    'To get the process ID for a container:': "docker inspect --format {{.State.Pid}}
+      <container-name-or-id>\n\n"
+    'To list (and pretty-print) the current mounted volumes for a container:': "docker
+      inspect --format='{{json .Volumes}}' <container-id> | python -mjson.tool\n\n"
+    'To copy files/folders between a container and your host:': "docker cp foo.txt
+      mycontainer:/foo.txt\n\n"
+    'To list currently running containers:': "docker ps\n\n"
+    'To list all containers:': "docker ps -a\n\n"
+    'To remove all stopped containers:': "docker rm $(docker ps -qa)\n\n"
+    'To list all images:': "docker images\n\n"
+    'To remove all untagged images:': "docker rmi $(docker images | grep \"^<none>\"
+      | awk \"{print $3}\")\n\n"
+    'To remove all volumes not used by at least one container:': 'docker volume prune
+
+      '

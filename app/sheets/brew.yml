@@ -1,0 +1,19 @@
+---
+:description: Generated sheet for brew
+:tags:
+- community
+- deps
+- mac
+:shortcuts:
+  :defaults:
+    Update: "brew update\n\n"
+    Upgrade everything: "brew upgrade\n\n"
+    Upgrade specific formula: "brew upgrade <formula>\n\n"
+    Install formula: "brew install <formula>\n\n"
+    Install cask: "brew install --cask <formula>\n\n"
+    Uninstall: "brew uninstall <formula>\n\n"
+    List installed formulae: "brew list\n\n"
+    Fix: "brew doctor\n\n"
+    Clean up: 'brew cleanup
+
+      '
