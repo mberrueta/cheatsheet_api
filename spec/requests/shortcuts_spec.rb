@@ -54,7 +54,7 @@ RSpec.describe 'Shortcuts', type: :request do
 
     context('all') do
       let(:list) do |_f|
-        Dir.children(ENV['SHEETS_PATH'])
+        Dir.children(ENV.fetch('SHEETS_PATH', nil))
            .map { |f| f.remove('.yml') }
       end
 

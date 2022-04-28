@@ -28,7 +28,7 @@ class GetShortcuts < ApplicationService
   end
 
   def sheet
-    YAML.load_file("#{ENV['SHEETS_PATH']}/#{filters[:sheet]}.yml").as_json
+    YAML.load_file("#{ENV.fetch('SHEETS_PATH', nil)}/#{filters[:sheet]}.yml").as_json
   end
 
   def list

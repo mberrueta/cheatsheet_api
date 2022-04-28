@@ -9,7 +9,7 @@ class GetSheets < ApplicationService
   private
 
   def sheets
-    @sheets ||= Dir.children(ENV['SHEETS_PATH'])
+    @sheets ||= Dir.children(ENV.fetch('SHEETS_PATH', nil))
                    .map { |f| f.remove('.yml') }
                    .sort
   end

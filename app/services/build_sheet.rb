@@ -77,6 +77,6 @@ class BuildSheet < ApplicationService
   end
 
   def file_name
-    "#{ENV['SHEETS_PATH']}/#{sheet}.yml"
+    "#{ENV.fetch('SHEETS_PATH', nil)}/#{sheet}.yml"
   end
 end
