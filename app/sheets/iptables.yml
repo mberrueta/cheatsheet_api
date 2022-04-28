@@ -1,28 +1,28 @@
 ---
-:description: Generated sheet for iptables
-:tags:
+description: Generated sheet for iptables
+tags:
 - community
 - networking
-:shortcuts:
-  :defaults:
-    'To show hit for rules with auto refresh:': "watch --interval 0 'iptables -nvL
+shortcuts:
+- default:
+  - 'To show hit for rules with auto refresh:': "watch --interval 0 'iptables -nvL
       | grep -v \"0     0\"'\n\n"
-    'To show hit for rule with auto refresh and highlight any changes since the last refresh:': "watch
+  - 'To show hit for rule with auto refresh and highlight any changes since the last refresh:': "watch
       -d -n 2 iptables -nvL\n\n"
-    'To block port 902 and hide this port from nmap:': "iptables -A INPUT -i eth0
+  - 'To block port 902 and hide this port from nmap:': "iptables -A INPUT -i eth0
       -p tcp --dport 902 -j REJECT --reject-with icmp-port-unreachable\n\n"
-    tcp-reset: "\n"
-    'To add a comment to a rule:': |+
+  - tcp-reset: "\n"
+  - 'To add a comment to a rule:': |+
       iptables ... -m comment --comment "This rule is here for this reason"
 
 
-    1) Show all rules: 'iptables -L INPUT --line-numbers
+  - 1) Show all rules: 'iptables -L INPUT --line-numbers
 
       '
-    OR iptables -nL --line-numbers: "\n"
-    4    ACCEPT     tcp  --  anywhere  anywhere             tcp dpt:bootps: "\n"
-    2.a) REMOVE (-D) a rule. (here an INPUT rule): "iptables -D INPUT 2\n\n"
-    2.b) OR INSERT a rule.: 'iptables -I INPUT {LINE_NUMBER} -i eth1 -p tcp --dport
+  - OR iptables -nL --line-numbers: "\n"
+  - 4    ACCEPT     tcp  --  anywhere  anywhere             tcp dpt:bootps: "\n"
+  - 2.a) REMOVE (-D) a rule. (here an INPUT rule): "iptables -D INPUT 2\n\n"
+  - 2.b) OR INSERT a rule.: 'iptables -I INPUT {LINE_NUMBER} -i eth1 -p tcp --dport
       21 -s 123.123.123.123 -j ACCEPT -m comment --comment "This rule is here for
       this reason"
 

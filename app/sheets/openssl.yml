@@ -1,29 +1,29 @@
 ---
-:description: Generated sheet for openssl
-:tags:
+description: Generated sheet for openssl
+tags:
 - community
-:shortcuts:
-  :defaults:
-    'To create a 2048-bit private key:': "openssl genrsa -out server.key 2048\n\n"
-    'To create the Certificate Signing Request (CSR):': "openssl req -new -key server.key
+shortcuts:
+- default:
+  - 'To create a 2048-bit private key:': "openssl genrsa -out server.key 2048\n\n"
+  - 'To create the Certificate Signing Request (CSR):': "openssl req -new -key server.key
       -out server.csr\n\n"
-    'To sign a certificate using a private key and CSR:': "openssl x509 -req -days
+  - 'To sign a certificate using a private key and CSR:': "openssl x509 -req -days
       365 -in server.csr -signkey server.key -out server.crt\n\n"
-    "(The above commands may be run in sequence to generate a self-signed SSL certificate.)": "\n"
-    To show certificate information for a certificate signing request: "openssl req
+  - "(The above commands may be run in sequence to generate a self-signed SSL certificate.)": "\n"
+  - To show certificate information for a certificate signing request: "openssl req
       -text -noout -in server.csr\n\n"
-    To show certificate information for generated certificate: "openssl x509 -text
+  - To show certificate information for generated certificate: "openssl x509 -text
       -noout -in server.crt \n\n"
-    To get the sha256 fingerprint of a certificate: "openssl x509 -in server.crt -noout
+  - To get the sha256 fingerprint of a certificate: "openssl x509 -in server.crt -noout
       -sha256 -fingerprint\n\n"
-    'To view certificate expiration:': |+
+  - 'To view certificate expiration:': |+
       echo | openssl s_client -connect <hostname>:443 2> /dev/null | \
       awk '/-----BEGIN/,/END CERTIFICATE-----/' | \
       openssl x509 -noout -enddate
 
-    'To generate Diffie-Hellman parameters:': "openssl dhparam -outform PEM -out dhparams.pem
+  - 'To generate Diffie-Hellman parameters:': "openssl dhparam -outform PEM -out dhparams.pem
       2048\n\n"
-    High-quality options for openssl for symmetric (secret key) encryption: "  \nThis
+  - High-quality options for openssl for symmetric (secret key) encryption: "  \nThis
       is what knowledgable people consider a good set of options for \nsymmetric encryption
       with openssl to give you a high-quality result.\nAlso, always remember that
       the result is only as good as the password\nyou use. You must use a strong password

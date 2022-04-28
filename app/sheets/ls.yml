@@ -1,15 +1,15 @@
 ---
-:description: Generated sheet for ls
-:tags:
+description: Generated sheet for ls
+tags:
 - community
-:shortcuts:
-  :defaults:
-    'To display everything in <dir>, excluding hidden files:': "ls <dir>\n\n"
-    'To display everything in <dir>, including hidden files:': "ls -a <dir>\n\n"
-    To display all files, along with the size (with unit suffixes) and timestamp: "ls
+shortcuts:
+- default:
+  - 'To display everything in <dir>, excluding hidden files:': "ls <dir>\n\n"
+  - 'To display everything in <dir>, including hidden files:': "ls -a <dir>\n\n"
+  - To display all files, along with the size (with unit suffixes) and timestamp: "ls
       -lh <dir>\n\n"
-    'To display files, sorted by size:': "ls -S <dir>\n\n"
-    'To display directories only:': "ls -d */ <dir>\n\n"
-    'To display directories only, include hidden:': 'ls -d .*/ */ <dir>
+  - 'To display files, sorted by size:': "ls -S <dir>\n\n"
+  - 'To display directories only:': "ls -d */ <dir>\n\n"
+  - 'To display directories only, include hidden:': 'ls -d .*/ */ <dir>
 
       '

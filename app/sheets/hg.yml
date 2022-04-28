@@ -1,16 +1,16 @@
 ---
-:description: Generated sheet for hg
-:tags:
+description: Generated sheet for hg
+tags:
 - community
 - vcs
-:shortcuts:
-  :defaults:
-    'To clone a directory:': "hg clone\n\n"
-    'To add files to hg tracker:': "hg add <file>\n\n"
-    'To add all files in <dir> to hg tracker:': "hg add <dir>\n\n"
-    'To create a commit with all tracked changes and a message:': "hg commit -m <message>\n\n"
-    'To push commits to source repository:': "hg push\n\n"
-    'To pull changes from source repository:': "hg pull\n\n"
-    'To rebase local commits to disambiguate with remote repository:': 'hg pull --rebase
+shortcuts:
+- default:
+  - 'To clone a directory:': "hg clone\n\n"
+  - 'To add files to hg tracker:': "hg add <file>\n\n"
+  - 'To add all files in <dir> to hg tracker:': "hg add <dir>\n\n"
+  - 'To create a commit with all tracked changes and a message:': "hg commit -m <message>\n\n"
+  - 'To push commits to source repository:': "hg push\n\n"
+  - 'To pull changes from source repository:': "hg pull\n\n"
+  - 'To rebase local commits to disambiguate with remote repository:': 'hg pull --rebase
 
       '

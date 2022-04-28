@@ -1,29 +1,29 @@
 ---
-:description: Generated sheet for less
-:tags:
+description: Generated sheet for less
+tags:
 - community
-:shortcuts:
-  :defaults:
-    'Go to end of file:': "G\n\n"
-    'Go to start of file:': "g\n\n"
-    'To edit the current file in $EDITOR:': "v\n\n"
-    'Search in file:': "/<searchterm>\n\n"
-    'Next result:': "n\n\n"
-    'Previous result:': "N\n\n"
-    'Toggle search highlighting:': "Alt-u\n\n"
-    'Follow (tail -f) a file after opening it:': 'F
+shortcuts:
+- default:
+  - 'Go to end of file:': "G\n\n"
+  - 'Go to start of file:': "g\n\n"
+  - 'To edit the current file in $EDITOR:': "v\n\n"
+  - 'Search in file:': "/<searchterm>\n\n"
+  - 'Next result:': "n\n\n"
+  - 'Previous result:': "N\n\n"
+  - 'Toggle search highlighting:': "Alt-u\n\n"
+  - 'Follow (tail -f) a file after opening it:': 'F
 
       '
-    'To start less in follow-mode:': "less +F <filename>\n\n"
-    'To disable the terminal refresh when exiting:': "less -X\n\n"
-    'Move to next file (if multiple files opened, eg. `less file1 file2`):': ":n\n\n"
-    'Move to previous file:': ":p\n\n"
-    'Don''t wrap long lines:': 'less -S <filename>
+  - 'To start less in follow-mode:': "less +F <filename>\n\n"
+  - 'To disable the terminal refresh when exiting:': "less -X\n\n"
+  - 'Move to next file (if multiple files opened, eg. `less file1 file2`):': ":n\n\n"
+  - 'Move to previous file:': ":p\n\n"
+  - 'Don''t wrap long lines:': 'less -S <filename>
 
       '
-    'or if already in less:': "-S\n\n"
-    Method 1 - Only works when the input is a pipe: "s <filename>\n\n"
-    'Method 2 - This should work whether input is a pipe or an ordinary file:': 'Type
+  - 'or if already in less:': "-S\n\n"
+  - Method 1 - Only works when the input is a pipe: "s <filename>\n\n"
+  - 'Method 2 - This should work whether input is a pipe or an ordinary file:': 'Type
       g or < (g or less-than) | $ (pipe then dollar) then cat > <filename> and Enter.
 
       '

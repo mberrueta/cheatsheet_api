@@ -1,14 +1,14 @@
 ---
-:description: Generated sheet for dpkg
-:tags:
+description: Generated sheet for dpkg
+tags:
 - community
 - packaging
-:shortcuts:
-  :defaults:
-    'To install or upgrade a package:': "dpkg -i <deb-file>\n\n"
-    'To remove a package (including configuration files):': "dpkg -P <deb-file>\n\n"
-    'To list all installed packages with versions and details:': "dpkg -l\n\n"
-    'To determine whether a Debian package is installed:': 'dpkg -s <deb-file> | grep
+shortcuts:
+- default:
+  - 'To install or upgrade a package:': "dpkg -i <deb-file>\n\n"
+  - 'To remove a package (including configuration files):': "dpkg -P <deb-file>\n\n"
+  - 'To list all installed packages with versions and details:': "dpkg -l\n\n"
+  - 'To determine whether a Debian package is installed:': 'dpkg -s <deb-file> | grep
       Status
 
       '

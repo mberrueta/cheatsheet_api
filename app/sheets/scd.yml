@@ -1,15 +1,15 @@
 ---
-:description: Generated sheet for scd
-:tags:
+description: Generated sheet for scd
+tags:
 - community
-:shortcuts:
-  :defaults:
-    'To index recursively some paths for the very first run:': "scd -ar ~/Documents/\n\n"
-    'To change to a directory path matching "doc":': "scd doc\n\n"
-    'To change to a path matching all of "a", "b" and "c":': "scd a b c\n\n"
-    'To change to a directory path that ends with "ts":': "scd \"ts$\"\n\n"
-    'To show selection menu and ranking of 20 most likely directories:': "scd -v\n\n"
-    'To alias current directory as "xray":': "scd --alias=xray\n\n"
-    'To jump to a previously defined aliased directory:': 'scd xray
+shortcuts:
+- default:
+  - 'To index recursively some paths for the very first run:': "scd -ar ~/Documents/\n\n"
+  - 'To change to a directory path matching "doc":': "scd doc\n\n"
+  - 'To change to a path matching all of "a", "b" and "c":': "scd a b c\n\n"
+  - 'To change to a directory path that ends with "ts":': "scd \"ts$\"\n\n"
+  - 'To show selection menu and ranking of 20 most likely directories:': "scd -v\n\n"
+  - 'To alias current directory as "xray":': "scd --alias=xray\n\n"
+  - 'To jump to a previously defined aliased directory:': 'scd xray
 
       '

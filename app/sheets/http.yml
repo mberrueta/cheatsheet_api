@@ -1,64 +1,64 @@
 ---
-:description: Generated sheet for http
-:tags:
+description: Generated sheet for http
+tags:
 - community
-:shortcuts:
-  :defaults:
-    'Custom HTTP method HTTP headers and JSON data:': "http PUT example.org X-API-Token:123
+shortcuts:
+- default:
+  - 'Custom HTTP method HTTP headers and JSON data:': "http PUT example.org X-API-Token:123
       name=John\n\n"
-    'Submitting forms:': "http -f POST example.org hello=World\n\n"
-    'See the request that is being sent using one of the output options:': "http -v
+  - 'Submitting forms:': "http -f POST example.org hello=World\n\n"
+  - 'See the request that is being sent using one of the output options:': "http -v
       example.org\n\n"
-    'Use Github API to post a comment on an issue with authentication:': "http -a
+  - 'Use Github API to post a comment on an issue with authentication:': "http -a
       USERNAME POST https://api.github.com/repos/jkbrzt/httpie/issues/83/comments
       body='HTTPie is awesome!'\n\n"
-    'Upload a file using redirected input:': "http example.org < file.json\n\n"
-    'Download a file and save it via redirected output:': "http example.org/file >
+  - 'Upload a file using redirected input:': "http example.org < file.json\n\n"
+  - 'Download a file and save it via redirected output:': "http example.org/file >
       file\n\n"
-    'Download a file wget style:': "http --download example.org/file\n\n"
-    http --session=logged-in -a username:password httpbin.org/get API-Key:123: "http
+  - 'Download a file wget style:': "http --download example.org/file\n\n"
+  - http --session=logged-in -a username:password httpbin.org/get API-Key:123: "http
       --session=logged-in httpbin.org/headers\n\n"
-    'Set a custom Host header to work around missing DNS records:': "http localhost:8000
+  - 'Set a custom Host header to work around missing DNS records:': "http localhost:8000
       Host:example.com\n\n"
-    'Simple JSON example:': "http PUT example.org name=John email=john@example.org\n\n"
-    'embedded into fields using =@ and :=@:': "http PUT api.example.com/person/1 name=John
+  - 'Simple JSON example:': "http PUT example.org name=John email=john@example.org\n\n"
+  - 'embedded into fields using =@ and :=@:': "http PUT api.example.com/person/1 name=John
       age:=29 married:=false hobbies:='[\"http\", \"pies\"]' description=@about-john.txt
       bookmarks:=@bookmarks.json\n\n"
-    'Send JSON data stored in a file:': "http POST api.example.com/person/1 < person.json\n\n"
-    Regular Forms: "http --form POST api.example.org/person/1 name='John Smith' email=john@example.org
+  - 'Send JSON data stored in a file:': "http POST api.example.com/person/1 < person.json\n\n"
+  - Regular Forms: "http --form POST api.example.org/person/1 name='John Smith' email=john@example.org
       cv=@~/Documents/cv.txt\n\n"
-    'type is multipart/form-data:': "http -f POST example.com/jobs name='John Smith'
+  - 'type is multipart/form-data:': "http -f POST example.com/jobs name='John Smith'
       cv@~/Documents/cv.pdf\n\n"
-    'To set custom headers you can use the Header:Value notation:': "http example.org
+  - 'To set custom headers you can use the Header:Value notation:': "http example.org
       \ User-Agent:Bacon/1.0  'Cookie:valued-visitor=yes;foo=bar' X-Foo:Bar  Referer:http://httpie.org/\n\n"
-    'Basic auth:': "http -a username:password example.org\n\n"
-    'Digest auth:': "http --auth-type=digest -a username:password example.org\n\n"
-    'With password prompt:': "http -a username example.org\n\n"
-    'Authorization information from your ~/.netrc file is honored as well:': |+
+  - 'Basic auth:': "http -a username:password example.org\n\n"
+  - 'Digest auth:': "http --auth-type=digest -a username:password example.org\n\n"
+  - 'With password prompt:': "http -a username example.org\n\n"
+  - 'Authorization information from your ~/.netrc file is honored as well:': |+
       cat ~/.netrc
           machine httpbin.org
           login httpie
           # password test
       http httpbin.org/basic-auth/httpie/test
 
-    'protocols):': "http --proxy=http:http://10.10.1.10:3128 --proxy=https:https://10.10.1.10:1080
+  - 'protocols):': "http --proxy=http:http://10.10.1.10:3128 --proxy=https:https://10.10.1.10:1080
       example.org\n\n"
-    'With Basic authentication:': "http --proxy=http:http://user:pass@10.10.1.10:3128
+  - 'With Basic authentication:': "http --proxy=http:http://user:pass@10.10.1.10:3128
       example.org\n\n"
-    "--verify=no (default is yes):": "http --verify=no https://example.org\n\n"
-    'You can also use --verify=<CA_BUNDLE_PATH> to set a CUSTOM CA BUNDLE path:': "http
+  - "--verify=no (default is yes):": "http --verify=no https://example.org\n\n"
+  - 'You can also use --verify=<CA_BUNDLE_PATH> to set a CUSTOM CA BUNDLE path:': "http
       --verify=/ssl/custom_ca_bundle https://example.org\n\n"
-    'the path of the cert file with --cert:': "http --cert=client.pem https://example.org\n\n"
-    'path of the key file with --cert-key:': "http --cert=client.crt --cert-key=client.key
+  - 'the path of the cert file with --cert:': "http --cert=client.pem https://example.org\n\n"
+  - 'path of the key file with --cert-key:': "http --cert=client.crt --cert-key=client.key
       https://example.org\n\n"
-    'You can control what should be printed via several options:': |2+
+  - 'You can control what should be printed via several options:': |2+
         # --headers, -h   Only the response headers are printed.
         # --body, -b      Only the response body is printed.
         # --verbose, -v   Print the whole HTTP exchange (request and response).
         # --print, -p     Selects parts of the HTTP exchange.
       http --verbose PUT httpbin.org/put hello=world
 
-    'Print request and response headers:': |2+
+  - 'Print request and response headers:': |2+
         # Character   Stands for
         # ----------- -------------------
         # H           Request headers.
@@ -67,16 +67,16 @@
         # b           Response body.
       http --print=Hh PUT httpbin.org/put hello=world
 
-    'the status code after an update:': "http --headers PATCH example.org/Really-Huge-Resource
+  - 'the status code after an update:': "http --headers PATCH example.org/Really-Huge-Resource
       name='New Name'\n\n"
-    'Redirect from a file:': "http PUT example.com/person/1 X-API-Token:123 < person.json\n\n"
-    'Or the output of another program:': "grep '401 Unauthorized' /var/log/httpd/error_log
+  - 'Redirect from a file:': "http PUT example.com/person/1 X-API-Token:123 < person.json\n\n"
+  - 'Or the output of another program:': "grep '401 Unauthorized' /var/log/httpd/error_log
       | http POST example.org/intruders\n\n"
-    'You can use echo for simple data:': "echo '{\"name\": \"John\"}' | http PATCH
+  - 'You can use echo for simple data:': "echo '{\"name\": \"John\"}' | http PATCH
       example.com/person/1 X-API-Token:123\n\n"
-    'You can even pipe web services together using HTTPie:': "http GET https://api.github.com/repos/jkbrzt/httpie
+  - 'You can even pipe web services together using HTTPie:': "http GET https://api.github.com/repos/jkbrzt/httpie
       | http POST httpbin.org/post\n\n"
-    'You can use cat to enter multiline data on the terminal:': |+
+  - 'You can use cat to enter multiline data on the terminal:': |+
       cat | http POST example.com
           <paste>
           # ^D
@@ -85,35 +85,35 @@
           - call parents
           ^D
 
-    'On OS X, you can send the contents of the clipboard with pbpaste:': "pbpaste
+  - 'On OS X, you can send the contents of the clipboard with pbpaste:': "pbpaste
       | http PUT example.com\n\n"
-    'on the command line:': |+
+  - 'on the command line:': |+
       echo 'data' | http POST example.org more=data   # This is invalid
 
 
-    "@/path/to/file) whose content is used as if it came from stdin.": "\n"
-    'Content-Type: application/xml:': "http PUT httpbin.org/put @/data/file.xml\n\n"
-    'Download a file:': "http example.org/Movie.mov > Movie.mov\n\n"
-    'elsewhere:': "http octodex.github.com/images/original.jpg | convert - -resize
+  - "@/path/to/file) whose content is used as if it came from stdin.": "\n"
+  - 'Content-Type: application/xml:': "http PUT httpbin.org/put @/data/file.xml\n\n"
+  - 'Download a file:': "http example.org/Movie.mov > Movie.mov\n\n"
+  - 'elsewhere:': "http octodex.github.com/images/original.jpg | convert - -resize
       25% -  | http example.org/Octocats\n\n"
-    'response in less pager:': "http --pretty=all --verbose example.org | less -R\n\n"
-    body is being saved to a file.: "http --download https://github.com/jkbrzt/httpie/tarball/master\n\n"
-    'response headers and progress are still shown in the terminal:': "http -d https://github.com/jkbrzt/httpie/tarball/master
+  - 'response in less pager:': "http --pretty=all --verbose example.org | less -R\n\n"
+  - body is being saved to a file.: "http --download https://github.com/jkbrzt/httpie/tarball/master\n\n"
+  - 'response headers and progress are still shown in the terminal:': "http -d https://github.com/jkbrzt/httpie/tarball/master
       |  tar zxf -\n\n"
-    'support that, the whole file will simply be downloaded:': "http -dco file.zip
+  - 'support that, the whole file will simply be downloaded:': "http -dco file.zip
       example.org/file\n\n"
-    'Prettified streamed response:': "http --stream -f -a YOUR-TWITTER-NAME https://stream.twitter.com/1/statuses/filter.json
+  - 'Prettified streamed response:': "http --stream -f -a YOUR-TWITTER-NAME https://stream.twitter.com/1/statuses/filter.json
       track='Justin Bieber'\n\n"
-    'server as soon as it arrives from the Twitter streaming API:': "http --stream
+  - 'server as soon as it arrives from the Twitter streaming API:': "http --stream
       -f -a YOUR-TWITTER-NAME https://stream.twitter.com/1/statuses/filter.json track=Apple
       | while read tweet; do echo \"$tweet\" | http POST example.org/tweets ; done\n\n"
-    'Create a new session named user1 for example.org:': "http --session=user1 -a
+  - 'Create a new session named user1 for example.org:': "http --session=user1 -a
       user1:password example.org X-Foo:Bar\n\n"
-    'authorization and HTTP headers will automatically be set:': "http --session=user1
+  - 'authorization and HTTP headers will automatically be set:': "http --session=user1
       example.org\n\n"
-    'To create or reuse a different session, simple specify a different name:': "http
+  - 'To create or reuse a different session, simple specify a different name:': "http
       --session=user2 -a user2:password example.org X-Bar:Foo\n\n"
-    'file. This allows for sessions to be re-used across multiple hosts:': 'http --session=/tmp/session.json
+  - 'file. This allows for sessions to be re-used across multiple hosts:': 'http --session=/tmp/session.json
       example.orghttp --session=/tmp/session.json admin.example.orghttp --session=~/.httpie/sessions/another.example.org/test.json
       example.orghttp --session-read-only=/tmp/session.json example.org
 

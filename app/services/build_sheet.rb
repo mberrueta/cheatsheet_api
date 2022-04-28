@@ -2,42 +2,50 @@
 
 require 'open3'
 require 'yaml'
+require 'pry'
 
 class BuildSheet < ApplicationService
   attr_reader :sheet, :tags
 
   def initialize(sheet, tags = [])
     super()
-    @sheet = sheet
+    @sheet = sheet.to_s
     @tags = tags
   end
 
   def call
     super
 
-    # local_sheet
     build_yml
   end
 
   private
 
   def build_yml
-    File.write("#{ENV['SHEETS_PATH']}/#{sheet}.yml", hash.to_yaml)
+    File.write(file_name, hash.deep_stringify_keys.to_yaml) if write?
+  end
+
+  def write?
+    if File.exist?(file_name)
+      tmp = YAML.load_file(file_name)
+      return !tmp['edited']
+    end
+    true
   end
 
   def hash
     @hash ||= {
       description: "Generated sheet for #{sheet}",
       tags:,
-      shortcuts: {
-        defaults: local_sheet
-      }
+      shortcuts: [
+        default: local_sheet.map { |k, v| { k => v } }
+      ]
     }
   end
 
   def local_sheet
-    @local_sheet = call_cheat_cmd do |result|
-      result.each { |l| build_line(l) }
+    @local_sheet ||= call_cheat_cmd do |result|
+      result.each { |l| build_line(l).strip }
 
       cheats
     end
@@ -66,5 +74,9 @@ class BuildSheet < ApplicationService
 
   def current_cheat
     @current_cheat ||= 'wtf'
+  end
+
+  def file_name
+    "#{ENV.fetch('SHEETS_PATH', nil)}/#{sheet}.yml"
   end
 end

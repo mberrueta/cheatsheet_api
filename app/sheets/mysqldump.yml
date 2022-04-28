@@ -1,24 +1,24 @@
 ---
-:description: Generated sheet for mysqldump
-:tags:
+description: Generated sheet for mysqldump
+tags:
 - community
 - database
-:shortcuts:
-  :defaults:
-    'To dump a database to a file (Note that your password will appear in your command history!):': "mysqldump
+shortcuts:
+- default:
+  - 'To dump a database to a file (Note that your password will appear in your command history!):': "mysqldump
       -u<username> -p<password> <database> > db.sql\n\n"
-    'To dump a database to a file:': "mysqldump -u<username> -p <database> > db.sql\n\n"
-    'To dump a database to a .tgz file (Note that your password will appear in your command history!):': "mysqldump
+  - 'To dump a database to a file:': "mysqldump -u<username> -p <database> > db.sql\n\n"
+  - 'To dump a database to a .tgz file (Note that your password will appear in your command history!):': "mysqldump
       -u<username> -p<password> <database> | gzip -9 > db.sql\n\n"
-    'To dump a database to a .tgz file:': "mysqldump -u<username> -p <database> |
+  - 'To dump a database to a .tgz file:': "mysqldump -u<username> -p <database> |
       gzip -9 > db.sql\n\n"
-    'To dump all databases to a file (Note that your password will appear in your command history!):': "mysqldump
+  - 'To dump all databases to a file (Note that your password will appear in your command history!):': "mysqldump
       -u<username> -p<password> --all-databases > all-databases.sql\n\n"
-    'To dump all databases to a file:': "mysqldump -u<username> -p --all-databases
+  - 'To dump all databases to a file:': "mysqldump -u<username> -p --all-databases
       > all-databases.sql\n\n"
-    'To export the database structure only:': "mysqldump --no-data -u<username> -p
+  - 'To export the database structure only:': "mysqldump --no-data -u<username> -p
       <database> > dump_file\n\n"
-    'To export the database data only:': 'mysqldump --no-create-info -u<username>
+  - 'To export the database data only:': 'mysqldump --no-create-info -u<username>
       -p <database> > dump_file
 
       '

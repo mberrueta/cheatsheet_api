@@ -1,38 +1,38 @@
 ---
-:description: Generated sheet for systemctl
-:tags:
+description: Generated sheet for systemctl
+tags:
 - community
-:shortcuts:
-  :defaults:
-    'To see running processes:': "systemctl\n\n"
-    'To check the status of a service:': "systemctl status foo.service\n\n"
-    'To start/restart/stop a service:': "systemctl start/restart/stop foo.service\n\n"
-    'To reload a service''s configuration:': "systemctl reload foo.service\n\n"
-    'To edit a service''s configuration:': "systemctl edit foo.service\n\n"
-    'To reload systemd manager configuration:': "systemctl daemon-reload\n\n"
-    'To enable a service to startup on boot:': "systemctl enable foo.service\n\n"
-    'To disable a service to startup on boot:': "systemctl disable foo.service\n\n"
-    'To start/restart/stop per-user service:': "systemctl --user start/restart/stop
+shortcuts:
+- default:
+  - 'To see running processes:': "systemctl\n\n"
+  - 'To check the status of a service:': "systemctl status foo.service\n\n"
+  - 'To start/restart/stop a service:': "systemctl start/restart/stop foo.service\n\n"
+  - 'To reload a service''s configuration:': "systemctl reload foo.service\n\n"
+  - 'To edit a service''s configuration:': "systemctl edit foo.service\n\n"
+  - 'To reload systemd manager configuration:': "systemctl daemon-reload\n\n"
+  - 'To enable a service to startup on boot:': "systemctl enable foo.service\n\n"
+  - 'To disable a service to startup on boot:': "systemctl disable foo.service\n\n"
+  - 'To start/restart/stop per-user service:': "systemctl --user start/restart/stop
       emacs.service\n\n"
-    'To see all active units, add --all for everything:': "systemctl list-units\n\n"
-    'To see all service units:': "systemctl list-units -at service\n\n"
-    'To see filtered units (all running service):': "systemctl list-units -t service
+  - 'To see all active units, add --all for everything:': "systemctl list-units\n\n"
+  - 'To see all service units:': "systemctl list-units -at service\n\n"
+  - 'To see filtered units (all running service):': "systemctl list-units -t service
       --state running\n\n"
-    'To see all service files, see which are enabled or disabled:': "systemctl list-unit-files
+  - 'To see all service files, see which are enabled or disabled:': "systemctl list-unit-files
       -at service\n\n"
-    'To list all units with specific status, inactive, active, enabled, running, exited:': "systemctl
+  - 'To list all units with specific status, inactive, active, enabled, running, exited:': "systemctl
       list-units --all --state=inactive\n\n"
-    'To use systemctl to list all unit files:': "systemctl list-unit-files\n\n"
-    'To see log items from the most recent boot:': "journalctl -b\n\n"
-    'To to see only kernal messages, add -b for at the most recent boot:': "journalctl
+  - 'To use systemctl to list all unit files:': "systemctl list-unit-files\n\n"
+  - 'To see log items from the most recent boot:': "journalctl -b\n\n"
+  - 'To to see only kernal messages, add -b for at the most recent boot:': "journalctl
       -k\n\n"
-    'To get the log entries for a service since boot:': "journalctl -b -u foo.service\n\n"
-    add -all to expand dependencies recursively: "systemctl list-dependencies foo.service
+  - 'To get the log entries for a service since boot:': "journalctl -b -u foo.service\n\n"
+  - add -all to expand dependencies recursively: "systemctl list-dependencies foo.service
       \n\n"
-    'To see low level details of a service settings on the system:': "systemctl show
+  - 'To see low level details of a service settings on the system:': "systemctl show
       foo.service\n\n"
-    'To list currently loaded targets:': "systemctl list-units --type=target\n\n"
-    'To change current target:': "systemctl isolate foo.target\n\n"
-    'To change default target:': 'systemctl enable foo.target
+  - 'To list currently loaded targets:': "systemctl list-units --type=target\n\n"
+  - 'To change current target:': "systemctl isolate foo.target\n\n"
+  - 'To change default target:': 'systemctl enable foo.target
 
       '

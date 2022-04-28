@@ -1,13 +1,13 @@
 ---
-:description: Generated sheet for chown
-:tags:
+description: Generated sheet for chown
+tags:
 - community
-:shortcuts:
-  :defaults:
-    'To change a file''s owner:': "chown <user> <file>\n\n"
-    'To change a file''s owner and group:': "chown <user>:<group> <file>\n\n"
-    'To change a directory''s owner recursively:': "chown -R <user> <directory>\n\n"
-    'To change ownership to match another file:': 'chown --reference=<reference-file>
+shortcuts:
+- default:
+  - 'To change a file''s owner:': "chown <user> <file>\n\n"
+  - 'To change a file''s owner and group:': "chown <user>:<group> <file>\n\n"
+  - 'To change a directory''s owner recursively:': "chown -R <user> <directory>\n\n"
+  - 'To change ownership to match another file:': 'chown --reference=<reference-file>
       <file>
 
       '

@@ -1,11 +1,11 @@
 ---
-:description: Generated sheet for ln
-:tags:
+description: Generated sheet for ln
+tags:
 - community
-:shortcuts:
-  :defaults:
-    'To create a symlink:': "ln -s <source-location> <symlink-location>\n\n"
-    To symlink, while overwriting existing destination files: 'ln -sf <source-location>
+shortcuts:
+- default:
+  - 'To create a symlink:': "ln -s <source-location> <symlink-location>\n\n"
+  - To symlink, while overwriting existing destination files: 'ln -sf <source-location>
       <symlink-location>
 
       '

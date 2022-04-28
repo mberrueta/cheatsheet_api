@@ -1,41 +1,41 @@
 ---
-:description: Generated sheet for nmap
-:tags:
+description: Generated sheet for nmap
+tags:
 - community
 - networking
-:shortcuts:
-  :defaults:
-    'Single target scan:': "nmap [target]\n\n"
-    'Scan from a list of targets:': "nmap -iL [list.txt]\n\n"
-    'iPv6:': "nmap -6 [target]\n\n"
-    'OS detection:': "nmap -O --osscan_guess [target]\n\n"
-    'Save output to text file:': "nmap -oN [output.txt] [target]\n\n"
-    'Save output to xml file:': "nmap -oX [output.xml] [target]\n\n"
-    'Scan a specific port:': "nmap -source-port [port] [target]\n\n"
-    'Do an aggressive scan:': "nmap -A [target]\n\n"
-    "--min-rate=X => min X packets / sec": "nmap -T5 --min-parallelism=50 -n --min-rate=300
+shortcuts:
+- default:
+  - 'Single target scan:': "nmap [target]\n\n"
+  - 'Scan from a list of targets:': "nmap -iL [list.txt]\n\n"
+  - 'iPv6:': "nmap -6 [target]\n\n"
+  - 'OS detection:': "nmap -O --osscan_guess [target]\n\n"
+  - 'Save output to text file:': "nmap -oN [output.txt] [target]\n\n"
+  - 'Save output to xml file:': "nmap -oX [output.xml] [target]\n\n"
+  - 'Scan a specific port:': "nmap -source-port [port] [target]\n\n"
+  - 'Do an aggressive scan:': "nmap -A [target]\n\n"
+  - "--min-rate=X => min X packets / sec": "nmap -T5 --min-parallelism=50 -n --min-rate=300
       [target]\n\n"
-    'Traceroute:': "nmap -traceroute [target]\n\n"
-    'ARP ping:       -PR': "\n"
-    'Example: Ping scan all machines on a class C network': "nmap -sP 192.168.0.0/24\n\n"
-    'Force UDP scan: -sU': "\n"
-    'Use some script:': "nmap --script default,safe\n\n"
-    Loads the script in the default category, the banner script, and all .nse files in the directory /home/user/customscripts.: "nmap
+  - 'Traceroute:': "nmap -traceroute [target]\n\n"
+  - 'ARP ping:       -PR': "\n"
+  - 'Example: Ping scan all machines on a class C network': "nmap -sP 192.168.0.0/24\n\n"
+  - 'Force UDP scan: -sU': "\n"
+  - 'Use some script:': "nmap --script default,safe\n\n"
+  - Loads the script in the default category, the banner script, and all .nse files in the directory /home/user/customscripts.: "nmap
       --script default,banner,/home/user/customscripts\n\n"
-    Loads all scripts whose name starts with http-, such as http-auth and http-open-proxy.: "nmap
+  - Loads all scripts whose name starts with http-, such as http-auth and http-open-proxy.: "nmap
       --script 'http-*'\n\n"
-    Loads every script except for those in the intrusive category.: "nmap --script
+  - Loads every script except for those in the intrusive category.: "nmap --script
       \"not intrusive\"\n\n"
-    Loads those scripts that are in both the default and safe categories.: "nmap --script
+  - Loads those scripts that are in both the default and safe categories.: "nmap --script
       \"default and safe\"\n\n"
-    Loads scripts in the default, safe, or intrusive categories, except for those whose names start with http-.: "nmap
+  - Loads scripts in the default, safe, or intrusive categories, except for those whose names start with http-.: "nmap
       --script \"(default or safe or intrusive) and not http-*\"\n\n"
-    "-pT:443 => Scan only port 443 with TCP (T:)": "nmap -T5 --min-parallelism=50
+  - "-pT:443 => Scan only port 443 with TCP (T:)": "nmap -T5 --min-parallelism=50
       -n --script \"ssl-heartbleed\" -pT:443 127.0.0.1\n\n"
-    Show all informations (debug mode): "nmap -d ...\n\n"
-    Scan for available SSH connections (use root for additional output): "nmap -p
+  - Show all informations (debug mode): "nmap -d ...\n\n"
+  - Scan for available SSH connections (use root for additional output): "nmap -p
       22 192.168.0.0/24\n\n"
-    Port Status Information: |+
+  - Port Status Information: |+
       - Open: This indicates that an application is listening for connections on this port.
       - Closed: This indicates that the probes were received but there is no application listening on this port.
       - Filtered: This indicates that the probes were not received and the state could not be established. It also indicates that the probes are being dropped by some kind of filtering.
@@ -43,7 +43,7 @@
       - Open/Filtered: This indicates that the port was filtered or open but Nmap couldn’t establish the state.
       - Closed/Filtered: This indicates that the port was filtered or closed but Nmap couldn’t establish the state.
 
-    Additional Scan Types: |2+
+  - Additional Scan Types: |2+
 
       nmap -sn: Probe only (host discovery, not port scan)
       nmap -sS: SYN Scan
@@ -53,7 +53,7 @@
       nmap -O: Used for OS Detection/fingerprinting
       nmap --scanflags: Sets custom list of TCP using `URG ACK PSH RST SYN FIN` in any order
 
-    Nmap Scripting Engine Categories: |
+  - Nmap Scripting Engine Categories: |
       The most common Nmap scripting engine categories:
       - auth: Utilize credentials or bypass authentication on target hosts.
       - broadcast: Discover hosts not included on command line by broadcasting on local network.

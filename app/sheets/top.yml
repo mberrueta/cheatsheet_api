@@ -1,19 +1,19 @@
 ---
-:description: Generated sheet for top
-:tags:
+description: Generated sheet for top
+tags:
 - community
-:shortcuts:
-  :defaults:
-    'To update every <interval> samples:': "top -i <interval>\n\n"
-    'To set the delay between updates to <delay> seconds:': "top -s <delay>\n\n"
-    'To set event counting to accumulative mode:': "top -a\n\n"
-    'To set event counting to delta mode:': "top -d\n\n"
-    'To set event counting to absolute mode:': "top -e\n\n"
-    'To not calculate statistics on shared libraries, also known as frameworks:': "top
+shortcuts:
+- default:
+  - 'To update every <interval> samples:': "top -i <interval>\n\n"
+  - 'To set the delay between updates to <delay> seconds:': "top -s <delay>\n\n"
+  - 'To set event counting to accumulative mode:': "top -a\n\n"
+  - 'To set event counting to delta mode:': "top -d\n\n"
+  - 'To set event counting to absolute mode:': "top -e\n\n"
+  - 'To not calculate statistics on shared libraries, also known as frameworks:': "top
       -F\n\n"
-    'To calculate statistics on shared libraries, also known as frameworks (default):': "top
+  - 'To calculate statistics on shared libraries, also known as frameworks (default):': "top
       -f\n\n"
-    'To print command line usage information and exit:': "top -h\n\n"
-    'To order the display by sorting on <key> in descending order:': 'top -o <key>
+  - 'To print command line usage information and exit:': "top -h\n\n"
+  - 'To order the display by sorting on <key> in descending order:': 'top -o <key>
 
       '

@@ -1,10 +1,10 @@
 ---
-:description: Generated sheet for tidy
-:tags:
+description: Generated sheet for tidy
+tags:
 - community
-:shortcuts:
-  :defaults:
-    'Enable indentation, wrap lines at column 160, messages to stdout:': 'tidy -i
+shortcuts:
+- default:
+  - 'Enable indentation, wrap lines at column 160, messages to stdout:': 'tidy -i
       -wrap 160 -o output.html input.html
 
       '

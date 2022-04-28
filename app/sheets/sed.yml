@@ -1,20 +1,20 @@
 ---
-:description: Generated sheet for sed
-:tags:
+description: Generated sheet for sed
+tags:
 - community
-:shortcuts:
-  :defaults:
-    'To replace all occurrences of "day" with "night" and write to stdout:': "sed
+shortcuts:
+- default:
+  - 'To replace all occurrences of "day" with "night" and write to stdout:': "sed
       's/day/night/g' <file>\n\n"
-    'To replace all occurrences of "day" with "night" within <file>:': "sed -i 's/day/night/g'
+  - 'To replace all occurrences of "day" with "night" within <file>:': "sed -i 's/day/night/g'
       <file>\n\n"
-    'To replace all occurrences of "day" with "night" on stdin:': "echo 'It is daytime'
+  - 'To replace all occurrences of "day" with "night" on stdin:': "echo 'It is daytime'
       | sed 's/day/night/g'\n\n"
-    'To remove leading spaces:': "sed -i -r 's/^\\s+//g' <file>\n\n"
-    'To remove empty lines and print results to stdout:': "sed '/^$/d' <file>\n\n"
-    'To replace newlines in multiple lines:': "sed ':a;N;$!ba;s/\\n//g' <file>\n\n"
-    'To insert a line before a matching pattern:': "sed '/Once upon a time/i\\Chapter
+  - 'To remove leading spaces:': "sed -i -r 's/^\\s+//g' <file>\n\n"
+  - 'To remove empty lines and print results to stdout:': "sed '/^$/d' <file>\n\n"
+  - 'To replace newlines in multiple lines:': "sed ':a;N;$!ba;s/\\n//g' <file>\n\n"
+  - 'To insert a line before a matching pattern:': "sed '/Once upon a time/i\\Chapter
       1'\n\n"
-    'To add a line after a matching pattern:': 'sed ''/happily ever after/a\The end.''
+  - 'To add a line after a matching pattern:': 'sed ''/happily ever after/a\The end.''
 
       '
