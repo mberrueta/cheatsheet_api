@@ -2,7 +2,6 @@
 
 require 'open3'
 require 'yaml'
-require 'pry'
 
 class BuildSheet < ApplicationService
   attr_reader :sheet, :tags
