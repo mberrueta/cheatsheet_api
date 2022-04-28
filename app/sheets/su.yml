@@ -1,9 +1,0 @@
----
-:description: Generated sheet for su
-:tags:
-- community
-:shortcuts:
-  :defaults:
-    'To switch to another user account:': 'su <user>
-
-      '

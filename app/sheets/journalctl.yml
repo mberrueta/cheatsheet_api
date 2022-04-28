@@ -1,22 +1,22 @@
 ---
-:description: Generated sheet for journalctl
-:tags:
+description: Generated sheet for journalctl
+tags:
 - community
-:shortcuts:
-  :defaults:
-    'To actively follow log (like tail -f):': "journalctl -f\n\n"
-    'To display all errors since last boot:': "journalctl -b -p err\n\n"
-    'To filter by time period:': "journalctl --since=2012-10-15 --until=\"2011-10-16
+shortcuts:
+- default:
+  - 'To actively follow log (like tail -f):': "journalctl -f\n\n"
+  - 'To display all errors since last boot:': "journalctl -b -p err\n\n"
+  - 'To filter by time period:': "journalctl --since=2012-10-15 --until=\"2011-10-16
       23:59:59\"\n\n"
-    'To show list of systemd units logged in journal:': "journalctl -F _SYSTEMD_UNIT\n\n"
-    'To filter by specific unit:': "journalctl -u dbus\n\n"
-    'To filter by executable name:': "journalctl /usr/bin/dbus-daemon\n\n"
-    'To filter by PID:': "journalctl _PID=123\n\n"
-    'To filter by Command, e.g., sshd:': "journalctl _COMM=sshd\n\n"
-    'To filter by Command and time period:': "journalctl _COMM=crond --since '10:00'
+  - 'To show list of systemd units logged in journal:': "journalctl -F _SYSTEMD_UNIT\n\n"
+  - 'To filter by specific unit:': "journalctl -u dbus\n\n"
+  - 'To filter by executable name:': "journalctl /usr/bin/dbus-daemon\n\n"
+  - 'To filter by PID:': "journalctl _PID=123\n\n"
+  - 'To filter by Command, e.g., sshd:': "journalctl _COMM=sshd\n\n"
+  - 'To filter by Command and time period:': "journalctl _COMM=crond --since '10:00'
       --until '11:00'\n\n"
-    'To list all available boots:': "journalctl --list-boots\n\n"
-    'To filter by specific User ID e.g., user id 1000:': "journalctl _UID=1000\n\n"
-    'To display the current disk usage of all journal files:': 'journalctl --disk-usage
+  - 'To list all available boots:': "journalctl --list-boots\n\n"
+  - 'To filter by specific User ID e.g., user id 1000:': "journalctl _UID=1000\n\n"
+  - 'To display the current disk usage of all journal files:': 'journalctl --disk-usage
 
       '

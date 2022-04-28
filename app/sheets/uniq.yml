@@ -1,14 +1,14 @@
 ---
-:description: Generated sheet for uniq
-:tags:
+description: Generated sheet for uniq
+tags:
 - community
-:shortcuts:
-  :defaults:
-    "(`sort -u` and `uniq` have the same effect.)": "sort <file> | uniq\n\n"
-    'To show not duplicated lines:': "sort <file> | uniq -u\n\n"
-    'To show duplicated lines only:': "sort <file> | uniq -d\n\n"
-    'To count all lines:': "sort <file> | uniq -c\n\n"
-    'To count not duplicated lines:': "sort <file> | uniq -uc\n\n"
-    'To count only duplicated lines:': 'sort <file> | uniq -dc
+shortcuts:
+- default:
+  - "(`sort -u` and `uniq` have the same effect.)": "sort <file> | uniq\n\n"
+  - 'To show not duplicated lines:': "sort <file> | uniq -u\n\n"
+  - 'To show duplicated lines only:': "sort <file> | uniq -d\n\n"
+  - 'To count all lines:': "sort <file> | uniq -c\n\n"
+  - 'To count not duplicated lines:': "sort <file> | uniq -uc\n\n"
+  - 'To count only duplicated lines:': 'sort <file> | uniq -dc
 
       '

@@ -1,9 +1,0 @@
----
-:description: Generated sheet for popd
-:tags:
-- community
-:shortcuts:
-  :defaults:
-    'To return to the directory at the top of the `pushd'' stack:': 'popd
-
-      '

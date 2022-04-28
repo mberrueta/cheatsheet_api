@@ -1,10 +1,10 @@
 ---
-:description: Generated sheet for iterm
-:tags:
+description: Generated sheet for iterm
+tags:
 - community
-:shortcuts:
-  :defaults:
-    GoTo panel: |2
+shortcuts:
+- default:
+  - GoTo panel: |2
        ^ OPTION ARROW
 
        # GoTo prev/next panel

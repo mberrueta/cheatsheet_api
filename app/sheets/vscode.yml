@@ -1,20 +1,22 @@
----
-:description: Generated sheet for vscode
-:tags:
-- community
-:shortcuts:
-  :defaults:
-    Next change: "⌘ F5\n\n"
-    Next/Prev editor: "⌥ ⌘ →/←\n\n"
-    Back/Next: "^ - / ⇪ ^ -\n\n"
-    Next bookmark: "⌥ ⌘ l\n\n"
-    Set bookmark: "⌥ ⌘ k\n\n"
-    Next/Prev problem: "⇪ F8\n\n"
-    Symbol in workspace: "⌘ T\n\n"
-    Symbol in editor: "⇪ ⌘ o\n\n"
-    Show/hide console: "⌘ j\n\n"
-    fold/unfold: |2+
-        ⌘ ⌥ [ / ]
-
-
-...
+description: Mac usefull shortcuts
+edited: true
+tags:
+  - ide
+  - productivity
+shortcuts:
+  - movement:
+      - next_change: CMD F5
+      - editor next: OPT CMD →
+      - editor prev: OPT CMD ←
+      - go back: ^ -
+      - go next: SHIFT ^ -
+      - next_bookmark: OPT CMD l
+      - set_bookmark: OPT CMD k
+      - next/prev_problem: SHIFT F8
+      - symbol_in_workspace: CMD T
+  - view:
+    - symbol_in_editor: SHIFT CMD o
+    - show/hide_console: CMD j
+  - transform:
+    - fold: CMD OPT [
+    - unfold: CMD OPT ]

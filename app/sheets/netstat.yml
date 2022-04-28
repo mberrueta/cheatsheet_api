@@ -1,21 +1,21 @@
 ---
-:description: Generated sheet for netstat
-:tags:
+description: Generated sheet for netstat
+tags:
 - community
 - networking
-:shortcuts:
-  :defaults:
-    WARNING ! netstat is deprecated. Look below.: "\n"
-    'To view which users/processes are listening to which ports:': "sudo netstat -lnptu\n\n"
-    'To view routing table (use -n flag to disable DNS lookups):': "netstat -r\n\n"
-    Which process is listening to port <port>: "netstat -pln | grep <port> | awk '{print
+shortcuts:
+- default:
+  - WARNING ! netstat is deprecated. Look below.: "\n"
+  - 'To view which users/processes are listening to which ports:': "sudo netstat -lnptu\n\n"
+  - 'To view routing table (use -n flag to disable DNS lookups):': "netstat -r\n\n"
+  - Which process is listening to port <port>: "netstat -pln | grep <port> | awk '{print
       $NF}'\n\n"
-    'Example output: 1507/python': "\n"
-    Fast display of ipv4 tcp listening programs: "sudo netstat -vtlnp --listening
+  - 'Example output: 1507/python': "\n"
+  - Fast display of ipv4 tcp listening programs: "sudo netstat -vtlnp --listening
       -4\n\n"
-    'Replace it by:': "ss\n\n"
-    For netstat -r: "ip route\n\n"
-    For netstat -i: "ip -s link\n\n"
-    For netstat -g: 'ip maddr
+  - 'Replace it by:': "ss\n\n"
+  - For netstat -r: "ip route\n\n"
+  - For netstat -i: "ip -s link\n\n"
+  - For netstat -g: 'ip maddr
 
       '

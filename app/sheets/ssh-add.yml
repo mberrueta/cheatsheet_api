@@ -1,16 +1,16 @@
 ---
-:description: Generated sheet for ssh-add
-:tags:
+description: Generated sheet for ssh-add
+tags:
 - community
 - ssh
-:shortcuts:
-  :defaults:
-    'To add private key:': "ssh-add <keyfile>\n\n"
-    'To load resident keys from FIDO2 authenticator:': "ssh-add -K\n\n"
-    'To store a GitHub SSH passphrase in your keychain:': "ssh-add -K ~/.ssh/github_rsa\n\n"
-    'To list all public keys:': "ssh-add -L\n\n"
-    'To list fingerprints of all keys:': "ssh-add -l\n\n"
-    'To delete key:': "ssh-add -d <keyfile>\n\n"
-    'To delete all keys:': 'ssh-add -D
+shortcuts:
+- default:
+  - 'To add private key:': "ssh-add <keyfile>\n\n"
+  - 'To load resident keys from FIDO2 authenticator:': "ssh-add -K\n\n"
+  - 'To store a GitHub SSH passphrase in your keychain:': "ssh-add -K ~/.ssh/github_rsa\n\n"
+  - 'To list all public keys:': "ssh-add -L\n\n"
+  - 'To list fingerprints of all keys:': "ssh-add -l\n\n"
+  - 'To delete key:': "ssh-add -d <keyfile>\n\n"
+  - 'To delete all keys:': 'ssh-add -D
 
       '

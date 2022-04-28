@@ -1,9 +1,9 @@
 ---
-:description: Generated sheet for sudo
-:tags:
+description: Generated sheet for sudo
+tags:
 - community
-:shortcuts:
-  :defaults:
-    Preserve user environment when running command: 'sudo -E <cmd>
+shortcuts:
+- default:
+  - Preserve user environment when running command: 'sudo -E <cmd>
 
       '

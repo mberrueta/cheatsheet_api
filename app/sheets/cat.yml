@@ -1,11 +1,11 @@
 ---
-:description: Generated sheet for cat
-:tags:
+description: Generated sheet for cat
+tags:
 - community
-:shortcuts:
-  :defaults:
-    'To display the contents of a file:': "cat <file>\n\n"
-    To display file contents with line numbers: "cat -n <file>\n\n"
-    To display file contents with line numbers (blank lines excluded): 'cat -b <file>
+shortcuts:
+- default:
+  - 'To display the contents of a file:': "cat <file>\n\n"
+  - To display file contents with line numbers: "cat -n <file>\n\n"
+  - To display file contents with line numbers (blank lines excluded): 'cat -b <file>
 
       '

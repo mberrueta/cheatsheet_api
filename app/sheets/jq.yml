@@ -1,13 +1,13 @@
 ---
-:description: Generated sheet for jq
-:tags:
+description: Generated sheet for jq
+tags:
 - community
-:shortcuts:
-  :defaults:
-    'To pretty print the json:': "jq \".\" < filename.json\n\n"
-    'To access the value at key "foo":': "jq '.foo'\n\n"
-    'To access first list item:': "jq '.[0]'\n\n"
-    'to slice and dice:': |
+shortcuts:
+- default:
+  - 'To pretty print the json:': "jq \".\" < filename.json\n\n"
+  - 'To access the value at key "foo":': "jq '.foo'\n\n"
+  - 'To access first list item:': "jq '.[0]'\n\n"
+  - 'to slice and dice:': |
       jq '.[2:4]'
       jq '.[:3]'
       jq '.[-2:]'

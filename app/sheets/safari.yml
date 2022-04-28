@@ -1,11 +1,11 @@
 ---
-:description: Generated sheet for safari
-:tags:
+description: Generated sheet for safari
+tags:
 - community
-:shortcuts:
-  :defaults:
-    Tab Overview: "SHIFT ⌘ \\\n\n"
-    Show downloads: "OPT ⌘ L       \n\nShift ⌘ L\n"
-    Edit bookmarks: "OPT ⌘ B       \n\n"
-    Show bookmarks: "⌘ B           \n\n"
-    Show history: "⌘ Y           \n\n"
+shortcuts:
+- default:
+  - Tab Overview: "SHIFT ⌘ \\\n\n"
+  - Show downloads: "OPT ⌘ L       \n\nShift ⌘ L\n"
+  - Edit bookmarks: "OPT ⌘ B       \n\n"
+  - Show bookmarks: "⌘ B           \n\n"
+  - Show history: "⌘ Y           \n\n"

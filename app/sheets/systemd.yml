@@ -1,14 +1,14 @@
 ---
-:description: Generated sheet for systemd
-:tags:
+description: Generated sheet for systemd
+tags:
 - community
-:shortcuts:
-  :defaults:
-    'To display process startup time:': "systemd-analyze\n\n"
-    'To display process startup time at service level:': "systemd-analyze blame\n\n"
-    'To list running units:': "systemctl list-units\n\n"
-    'To load a unit at startup:': "systemctl enable foo.service\n\n"
-    'To start or Stop a unit:': "systemctl <start | stop> foo.service\n\n"
-    'To unit file locations:': |
+shortcuts:
+- default:
+  - 'To display process startup time:': "systemd-analyze\n\n"
+  - 'To display process startup time at service level:': "systemd-analyze blame\n\n"
+  - 'To list running units:': "systemctl list-units\n\n"
+  - 'To load a unit at startup:': "systemctl enable foo.service\n\n"
+  - 'To start or Stop a unit:': "systemctl <start | stop> foo.service\n\n"
+  - 'To unit file locations:': |
       /etc/systemd/system
       /usr/lib/systemd/system

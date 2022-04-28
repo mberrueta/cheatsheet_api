@@ -1,8 +1,0 @@
----
-:description: Generated sheet for notify-send
-:tags:
-- community
-:shortcuts:
-  :defaults:
-    'To send a desktop notification via dbus:': "notify-send -i 'icon-file/name' -a
-      'application_name' 'summary' 'body of message'\n\n"

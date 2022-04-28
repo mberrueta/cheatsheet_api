@@ -1,17 +1,17 @@
 ---
-:description: Generated sheet for paste
-:tags:
+description: Generated sheet for paste
+tags:
 - community
-:shortcuts:
-  :defaults:
-    'To concat columns from files:': "paste <file>...\n\n"
-    'To list the files in the current directory in three columns:': "ls | paste -
+shortcuts:
+- default:
+  - 'To concat columns from files:': "paste <file>...\n\n"
+  - 'To list the files in the current directory in three columns:': "ls | paste -
       - -\n\n"
-    'To combine pairs of lines from a file into single lines:': "paste -s -d '\\t\\n'
+  - 'To combine pairs of lines from a file into single lines:': "paste -s -d '\\t\\n'
       <file>\n\n"
-    'To number the lines in a file, similar to nl(1):': "sed = <file> | paste -s -d
+  - 'To number the lines in a file, similar to nl(1):': "sed = <file> | paste -s -d
       '\\t\\n' - -\n\n"
-    'To create a colon-separated list of directories named bin, suitable for use in the PATH environment variable:': 'find
+  - 'To create a colon-separated list of directories named bin, suitable for use in the PATH environment variable:': 'find
       / -name bin -type d | paste -s -d : -
 
       '

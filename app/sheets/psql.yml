@@ -1,21 +1,21 @@
 ---
-:description: Generated sheet for psql
-:tags:
+description: Generated sheet for psql
+tags:
 - community
 - database
-:shortcuts:
-  :defaults:
-    "-h server hostname/address.": "\n"
-    'Connect to a specific database:': "psql -U <username> -h <host> -d <database>\n\n"
-    'Get databases on a server:': "psql -U <username> -h <host> --list\n\n"
-    'Execute sql query and save output to file:': "psql -U <username> -d <database>
+shortcuts:
+- default:
+  - "-h server hostname/address.": "\n"
+  - 'Connect to a specific database:': "psql -U <username> -h <host> -d <database>\n\n"
+  - 'Get databases on a server:': "psql -U <username> -h <host> --list\n\n"
+  - 'Execute sql query and save output to file:': "psql -U <username> -d <database>
       -c 'select * from tableName;' -o <outfile>\n\n"
-    'Execute query and get tabular html output:': "psql -U <username> -d <database>
+  - 'Execute query and get tabular html output:': "psql -U <username> -d <database>
       -H -c 'select * from tableName;'\n\n"
-    "(if column names in the first row are not needed, remove the word 'header')": "psql
+  - "(if column names in the first row are not needed, remove the word 'header')": "psql
       -U <username> -d <database> -c 'copy (select * from tableName) to stdout with
       csv header;' -o <outfile>\n\n"
-    'Read commands from file:': "psql -f <outfile>\n\n"
-    'Restore databases from file:': 'psql -f <outfile> <username>
+  - 'Read commands from file:': "psql -f <outfile>\n\n"
+  - 'Restore databases from file:': 'psql -f <outfile> <username>
 
       '

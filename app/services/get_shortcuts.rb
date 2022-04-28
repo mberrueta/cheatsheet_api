@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'yaml'
+require 'pry'
 
 class GetShortcuts < ApplicationService
   attr_reader :filters
@@ -23,7 +24,7 @@ class GetShortcuts < ApplicationService
   end
 
   def shortcuts
-    @shortcuts ||= list.sort_by { |element| element.keys.first }
+    @shortcuts ||= list.flatten
   end
 
   def sheet
@@ -31,18 +32,21 @@ class GetShortcuts < ApplicationService
   end
 
   def list
-    sheet['shortcuts'].flat_map do |category|
-      category.values.first.flat_map do |shortcut|
-        serialize(category, shortcut)
+    sheet['shortcuts'].map do |category_hash|
+      category = category_hash.keys.first
+      category_hash.values.flatten.map do |shortcut_hash|
+        name = shortcut_hash.keys.first
+        shortcut = shortcut_hash.values.first.strip
+        serialize(category, name, shortcut)
       end
     end
   end
 
-  def serialize(category, shortcut)
+  def serialize(category, name, shortcut)
     {
-      name: "#{category.keys.first} #{shortcut.keys.first}",
-      command: shortcut.values.first['command'] || shortcut.values.first,
-      require: shortcut.values.first['require']
+      name: category == "#{category}.#{name}",
+      command: shortcut['command'] || shortcut,
+      require: shortcut['require']
     }
   end
 end

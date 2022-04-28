@@ -1,9 +1,0 @@
----
-:description: Generated sheet for df
-:tags:
-- community
-:shortcuts:
-  :defaults:
-    'To print free disk space in a human-readable format:': 'df -h
-
-      '
