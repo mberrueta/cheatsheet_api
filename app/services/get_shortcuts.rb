@@ -43,7 +43,7 @@ class GetShortcuts < ApplicationService
 
   def serialize(category, name, shortcut)
     {
-      name: category == "#{category}.#{name}",
+      name: "#{category}.#{name}",
       command: shortcut['command'] || shortcut,
       require: shortcut['require']
     }
