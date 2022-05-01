@@ -4,11 +4,16 @@ tags:
 - community
 shortcuts:
 - default:
-  - 'Help and documentation: https://ruby-doc.org/': "\n"
-  - 'To serve the current directory:': "ruby -run -e httpd . -p <port>\n\n"
-  - 'To execute a script file:': "ruby <file>\n\n"
-  - 'To execute one line of script:': "ruby -e 'command'\n\n"
-  - 'To check script file syntax:': "ruby -c <file>\n\n"
-  - 'To specify $LOAD_PATH directory:': |
-      ruby -Idirectory
-      ruby -Ispec spec/test_spec.rb
+  - 'New api': rails NAME new --api --minimal -f
+  - 'Add model': rails g model Comment commenter:string body:text article:references
+  - 'Add factory': rails g factory_bot:model Comment commenter:string body:text article:references
+  - 'Add controller': rails g scaffold_controller Article
+  - 'Set rspec': bundle exec rails g rspec:install
+  - 'Cucumber': bundle exec cucumber
+  - 'Rspec': bundle exec rspec --format documentation
+  - 'Console': bundle exec rails c
+  - 'Create db': bundle exec rake db:create
+  - 'Migrate': bundle exec rake db:migrate
+  - 'Rebuild db': bundle exec rake db:drop db:create db:structure:load db:migrate db:seed
+  - 'Seed': bundle exec rake db:seed
+  - 'Server': bundle exec rails server -b 0.0.0.0"

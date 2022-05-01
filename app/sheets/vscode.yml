@@ -1,22 +1,23 @@
-description: Mac usefull shortcuts
+description: VS Code usefull shortcuts
 edited: true
 tags:
   - ide
   - productivity
 shortcuts:
   - movement:
-      - next_change: CMD F5
+      - next change: CMD F5
       - editor next: OPT CMD →
       - editor prev: OPT CMD ←
       - go back: ^ -
       - go next: SHIFT ^ -
-      - next_bookmark: OPT CMD l
-      - set_bookmark: OPT CMD k
-      - next/prev_problem: SHIFT F8
-      - symbol_in_workspace: CMD T
+      - next bookmark: OPT CMD l
+      - set bookmark: OPT CMD k
+      - next/prev problem: SHIFT F8
+      - symbol in workspace: CMD T
+      - bread crumb: 'SHIT CMD :'
   - view:
-    - symbol_in_editor: SHIFT CMD o
-    - show/hide_console: CMD j
+      - symbol in editor: SHIFT CMD o
+      - show/hide console: CMD j
   - transform:
-    - fold: CMD OPT [
-    - unfold: CMD OPT ]
+      - fold: CMD OPT [
+      - unfold: CMD OPT ]

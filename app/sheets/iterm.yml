@@ -1,26 +1,23 @@
 ---
 description: Generated sheet for iterm
+edited: true
 tags:
 - community
 shortcuts:
 - default:
-  - GoTo panel: |2
-       ^ OPTION ARROW
-
-       # GoTo prev/next panel
-       ^ [/]
-
-       # GoTo tab
-       ^ ARROW
-
-       # Resize panel
-       ^ CTRL ARROW
-
-       # Set Mark
-       ^ M
-
-       # Jump to Mark
-       ^ J
-
-       # Copy Mode
-      ⇧ ⌘ C
+  - GoTo panel:
+      ^ OPTION ARROW
+  - GoTo prev/next panel:
+      ^ [/]
+  - GoTo tab:
+      ^ ARROW
+  - Resize panel:
+      ^ CTRL ARROW
+  - Set Mark:
+      ^ M
+  - Jump to Mark:
+      ^ J
+  - Copy Mode:
+      SHIFT CMD C
+  - Broadcast current tab:
+      OPT CMD I
