@@ -1,0 +1,43 @@
+---
+description: |
+  FactoryBot allow to generate models for test very quickly.
+  More at https://devhints.io/factory_bot
+edited: true
+tags:
+- development
+- ruby
+- rails
+- test
+shortcuts:
+- default:
+  - 'Define': |
+      FactoryBot.define do
+        factory :customer do
+          name { Faker::Name.name }
+          last_name { Faker::Name.last_name }
+          email { Faker::Internet.email }
+          sequence(:username) { |n| "user#{n}" }
+          organization  # assumes there's a factory :organization
+        end
+      end
+
+  - 'After create hook': |
+      factory :post do
+        after :create do |post|
+          create :theme, post: post             # has_one
+          create_list :comment, 3, post: post   # has_many
+        end
+      end
+  - 'Specific factories': |
+      factory :user do
+        first_name { Faker::Name.name }
+        admin { false }
+
+        factory :admin_user do
+          admin { true }
+        end
+      end
+
+  - 'Build (not save it)': build(:user)
+  - 'Create': create(:user)
+  - 'Create list': create_list(:user, 4)

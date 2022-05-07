@@ -1,10 +1,15 @@
 ---
-description: Generated sheet for rubymine
+description: Generated sheet for Rubymine
+edited: true
 tags:
-- community
+- development
+- ruby
 shortcuts:
 - default:
-  - Next method: "^ SHIFT DOWN\n\n"
-  - Method list: "SHIFT ⌘ UP\n\n"
-  - Expland/Collapse Selection: "^ SHIFT ⌘ RIGHT/LEFT\n\n"
-  - Recent files: "^ R\n"
+  - Next method: "^ SHIFT DOWN"
+  - Method list: "SHIFT ⌘ UP"
+  - Expand Selection: "^ SHIFT ⌘ RIGHT"
+  - Collapse Selection: "^ SHIFT ⌘ LEFT"
+  - Recent files: "^ R"
+  - String manipulation: "^ SHIFT M"
+  - Execute: "^ ^"

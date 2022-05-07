@@ -1,0 +1,12 @@
+---
+description: Apache HTTP server benchmarking tool. A tool for benchmarking your (HTTP) server
+edited: true
+tags:
+- benchmark
+- development
+shortcuts:
+- default:
+  - 'Send 100 requests, 50 concurrent':
+      ab -n 100 -c 50 http://localhost:3000
+  - 'Send for 30 seconds, 50 concurrent request':
+      ab -t 30 -c 50 http://localhost:3000
